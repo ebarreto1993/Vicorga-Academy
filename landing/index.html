@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vicorga Academy — Formación profesional de vanguardia</title>
+
+<!-- Fuentes de Google (Actualizadas a Playfair Display y Sora) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                <span class="mark">V</span>
+
+                <div class="logo-text">
+                    Vicorga <span>Academy</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#inicio" class="nav-link">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#nosotros" class="nav-link">Nosotros</a>
+                    </li>
+
+                    <li>
+                        <a href="#cursos" class="nav-link">Cursos</a>
+                    </li>
+
+                    <li>
+                        <a href="#beneficios" class="nav-link">Beneficios</a>
+                    </li>
+
+                    <li>
+                        <a href="#testimonios" class="nav-link">Testimonios</a>
+                    </li>
+
+                    <li>
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#inscripcion" class="btn btn-primary">
+                    Inscríbete ahora
+                </a>
+
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Abrir menú"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="container hero-container">
+
+                <div class="hero-content animate-fade-up">
+                    <p class="subtitle">
+                        TRANSFORMA TU PASIÓN EN TU PROFESIÓN
+                    </p>
+
+                    <h1 class="hero-title">
+                        Academia de<br>
+                        <span>Belleza</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Formamos expertos en belleza con educación de calidad,
+                        práctica y actualizada. Aprende un oficio que sí abre puertas.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#cursos" class="btn btn-dark">
+                            Conoce más
+                        </a>
+
+                        <a href="#nosotros" class="btn btn-text">
+                            Nuestros cursos
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-media animate-fade-in">
+                    <div class="video-wrapper">
+                        <img
+                            src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1000&auto=format&fit=crop"
+                            alt="Video de presentación de Vicorga Academy"
+                        >
+
+                        <!-- El botón play se oculta por ahora -->
+                        <!-- Para agregar video después, descomentar y reemplazar URL -->
+                        <!-- <button class="play-btn" aria-label="Reproducir video">▶</button> -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CURSOS -->
+        <section class="courses" id="cursos">
+            <div class="container">
+
+                <div class="section-header animate-fade-up">
+
+                    <p
+                        class="subtitle"
+                        style="text-align: center;"
+                    >
+                        NUESTROS CURSOS
+                    </p>
+
+                    <!-- Navegación por iconos -->
+                    <div class="course-nav">
+
+                        <div class="course-icon active">
+                            <span class="icon">👑</span>
+                            <span>Maestra en Belleza</span>
+                        </div>
+
+                        <div class="course-icon">
+                            <span class="icon">💆‍♀️</span>
+                            <span>Cosmetología</span>
+                        </div>
+
+                        <div class="course-icon">
+                            <span class="icon">💅</span>
+                            <span>Uñas</span>
+                        </div>
+
+                        <div class="course-icon">
+                            <span class="icon">✨</span>
+                            <span>Lashista</span>
+                        </div>
+
+                        <div class="course-icon">
+                            <span class="icon">👁️</span>
+                            <span>Micro</span>
+                        </div>
+
+                        <div class="course-icon">
+                            <span class="icon">💄</span>
+                            <span>Maquillaje</span>
+                        </div>
+
+                        <div class="course-icon">
+                            <span class="icon">✂️</span>
+                            <span>Barbería</span>
+                        </div>
+
+                        <div class="course-icon">
+                            <span class="icon">✒️</span>
+                            <span>Tatuajes</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- CARRUSEL -->
+                <div class="carousel-wrapper animate-fade-up">
+
+                    <button
+                        class="carousel-btn prev"
+                        id="prev-btn"
+                        aria-label="Anterior"
+                    >
+                        ❮
+                    </button>
+
+                    <div
+                        class="carousel-track"
+                        id="carousel-track"
+                    >
+
+                        <!-- Maestra en Belleza -->
+                        <div class="course-card">
+                            <img
+                                src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Maestra en Belleza"
+                            >
+
+                            <div class="card-overlay">
+                                <h3>MAESTRA EN BELLEZA</h3>
+                                <p class="card-sub">
+                                    10 Módulos integrales
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- Cosmetología -->
+                        <div class="course-card">
+                            <img
+                                src="https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Cosmetología"
+                            >
+
+                            <div class="card-overlay">
+                                <h3>COSMETOLOGÍA</h3>
+                                <p class="card-sub">
+                                    Cosmetología, Cosmiatría y Dermocosmiatría
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- Uñas -->
+                        <div class="course-card">
+                            <img
+                                src="https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Uñas"
+                            >
+
+                            <div class="card-overlay">
+                                <h3>UÑAS</h3>
+                            </div>
+                        </div>
+
+
+                        <!-- Lashista -->
+                        <div class="course-card">
+                            <img
+                                src="https://images.pexels.com/photos/5128220/pexels-photo-5128220.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Lashista"
+                            >
+
+                            <div class="card-overlay">
+                                <h3>LASHISTA</h3>
+                            </div>
+                        </div>
+
+
+                        <!-- Micropigmentación -->
+                        <div class="course-card">
+                            <img
+                                src="https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Micropigmentación"
+                            >
+
+                            <div class="card-overlay">
+                                <h3>MICROPIGMENTACIÓN</h3>
+                            </div>
+                        </div>
+
+
+                        <!-- Maquillaje -->
+                        <div class="course-card">
+                            <img
+                                src="https://images.pexels.com/photos/2688992/pexels-photo-2688992.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Maquillaje"
+                            >
+
+                            <div class="card-overlay">
+                                <h3>MAQUILLAJE</h3>
+                            </div>
+                        </div>
+
+
+                        <!-- Barbería -->
+                        <div class="course-card">
+                            <img
+                                src="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Barbería"
+                            >
+
+                            <div class="card-overlay">
+                                <h3>BARBERÍA</h3>
+                            </div>
+                        </div>
+
+
+                        <!-- Tatuajes -->
+                        <div class="course-card">
+                            <img
+                                src="https://images.pexels.com/photos/2183131/pexels-photo-2183131.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Tatuajes"
+                            >
+
+                            <div class="card-overlay">
+                                <h3>TATUAJES</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="carousel-btn next"
+                        id="next-btn"
+                        aria-label="Siguiente"
+                    >
+                        ❯
+                    </button>
+
+                </div>
+
+
+                <!-- INDICADORES -->
+                <div class="carousel-indicators">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- POR QUÉ ELEGIR VICORGA -->
+        <section class="features" id="nosotros">
+            <div class="container">
+
+                <div class="section-header animate-fade-up">
+
+                    <p
+                        class="subtitle"
+                        style="text-align: center;"
+                    >
+                        POR QUÉ ELEGIR VICORGA
+                    </p>
+
+                    <h2 class="section-title">
+                        Una formación diseñada para<br>
+                        <span>tu éxito profesional</span>
+                    </h2>
+
+                </div>
+
+
+                <!-- CARACTERÍSTICAS -->
+                <div class="features-grid">
+
+                    <div class="feature-card animate-fade-up">
+                        <div class="feature-icon">✨</div>
+
+                        <h3>
+                            Práctica Real Garantizada
+                        </h3>
+
+                        <p>
+                            Aprende haciendo desde el primer día con modelos
+                            reales y herramientas profesionales de vanguardia.
+                        </p>
+                    </div>
+
+
+                    <div class="feature-card animate-fade-up">
+                        <div class="feature-icon">📜</div>
+
+                        <h3>
+                            Certificación Profesional
+                        </h3>
+
+                        <p>
+                            Obtén un título avalado que respalde tu talento
+                            y te abra las puertas en la industria de la belleza.
+                        </p>
+                    </div>
+
+
+                    <div class="feature-card animate-fade-up">
+                        <div class="feature-icon">👥</div>
+
+                        <h3>
+                            Grupos Reducidos
+                        </h3>
+
+                        <p>
+                            Atención personalizada de instructores expertos
+                            para asegurar que perfecciones cada técnica.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- ESTADÍSTICAS -->
+                <div class="stats-bar animate-fade-up">
+
+                    <div class="stat-item">
+                        <span class="stat-number">+1,500</span>
+                        <span class="stat-label">
+                            Egresados Exitosos
+                        </span>
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat-item">
+                        <span class="stat-number">+5</span>
+                        <span class="stat-label">
+                            Años de Experiencia
+                        </span>
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">
+                            Inserción Laboral
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+<!-- Sección de Testimonios -->
+        <section class="testimonials" id="testimonios">
+            <div class="container animate-fade-up">
+                <p class="subtitle" style="text-align: center;">LO QUE DICEN NUESTROS ESTUDIANTES</p>
+                
+                <div class="testimonial-carousel">
+                    <div class="testimonial-track" id="testimonial-track">
+                        <!-- Testimonio 1 -->
+                        <div class="testimonial-card">
+                            <p class="quote">"La mejor decisión que tomé fue estudiar aquí. No solo aprendí una profesión, también encontré una familia y nuevas oportunidades."</p>
+                            <div class="author">
+                                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Valeria R.">
+                                <div class="author-info">
+                                    <strong>Valeria R.</strong>
+                                    <span>Egresada de Cosmetología</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonio 2 -->
+                        <div class="testimonial-card">
+                            <p class="quote">"Los instructores son verdaderos expertos. Entré sin saber nada y ahora tengo mi propio estudio de uñas. ¡Totalmente recomendado!"</p>
+                            <div class="author">
+                                <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Andrea M.">
+                                <div class="author-info">
+                                    <strong>Andrea M.</strong>
+                                    <span>Egresada de Uñas</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonio 3 -->
+                        <div class="testimonial-card">
+                            <p class="quote">"La práctica desde el primer día te da muchísima seguridad. Gracias a la bolsa de trabajo conseguí empleo en la mejor barbería de la ciudad."</p>
+                            <div class="author">
+                                <img src="https://images.pexels.com/photos/936229/pexels-photo-936229.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Carlos T.">
+                                <div class="author-info">
+                                    <strong>Carlos T.</strong>
+                                    <span>Egresado de Barbería</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Indicadores (puntitos) -->
+                    <div class="testi-indicators" id="testi-indicators">
+                        <!-- Se generarán por JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- CTA FINAL -->
+        <section class="final-cta">
+            <div class="cta-overlay"></div>
+            <div class="cta-content">
+                <div class="container">
+                    <p class="subtitle">TU FUTURO EMPIEZA HOY</p>
+                    <h2>Da el primer paso hacia tu carrera en belleza.</h2>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 16px; max-width: 500px; margin: 0 auto 40px;">
+                        Escríbenos por WhatsApp o envía tu solicitud de inscripción. Te guiaremos en todo el proceso.
+                    </p>
+                    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://wa.me/593999999999" class="btn btn-primary" target="_blank">
+                            WhatsApp
+                        </a>
+                        <a href="#contacto" class="btn btn-text" style="color: white; border: 1px solid rgba(255,255,255,0.3); padding: 12px 28px;">
+                            Contáctanos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Pie de página -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Marca -->
+                <div class="footer-brand">
+                    <a href="#" class="logo" style="color: var(--white);">
+                        <span class="mark" style="border-color: var(--primary-gold);">V</span>
+                        <div class="logo-text">
+                            Vicorga <span style="color: var(--primary-gold);">Academy</span>
+                        </div>
+                    </a>
+                    <p>Formamos profesionales de la belleza con pasión, ética y excelencia.</p>
+                    <div class="social-links">
+                        <a href="#">📷</a>
+                        <a href="#">📘</a>
+                        <a href="#">🎵</a>
+                        <a href="#">▶️</a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Enlaces -->
+                <div class="footer-links">
+                    <h4>ENLACES</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Cursos destacados -->
+                <div class="footer-links">
+                    <h4>CURSOS</h4>
+                    <ul>
+                        <li><a href="#cursos">Maestra en Belleza</a></li>
+                        <li><a href="#cursos">Cosmetología</a></li>
+                        <li><a href="#cursos">Uñas</a></li>
+                        <li><a href="#cursos">Micropigmentación</a></li>
+                        <li><a href="#cursos">Barbería</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Contacto -->
+                <div class="footer-contact">
+                    <h4>CONTACTO</h4>
+                    <ul>
+                        <li>📞 +593 99 999 9999</li>
+                        <li>✉️ info@vicorgaacademy.com</li>
+                        <li>📍 Cuenca, Azuay, Ecuador</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vicorga Academy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
