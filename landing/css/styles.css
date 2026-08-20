@@ -127,33 +127,13 @@ ul {
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
 }
 
-.logo .mark {
-    font-family: var(--font-heading);
-    color: var(--primary-gold);
-    font-size: 24px;
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
 }
-
-.logo-text {
-    font-family: var(--font-heading);
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.1;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.logo-text span {
-    display: block;
-    font-family: var(--font-body);
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 3px;
-    color: var(--gray-text);
-}
-
 .nav-list {
     display: flex;
     gap: 32px;
@@ -771,12 +751,15 @@ ul {
 
 .social-links a {
     transition: var(--transition-smooth);
+    font-size: 20px;
+    color: var(--primary-gold);
 }
 
 .social-links a:hover {
     transform: translateY(-3px);
-    filter: brightness(1.2);
+    color: var(--white);
 }
+
 
 .footer h4 {
     color: var(--primary-gold);
