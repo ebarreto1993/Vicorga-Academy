@@ -816,6 +816,57 @@ ul {
     font-size: 12px;
 }
 
+/*otros estilos pagina curso*/
+/* ================= MÓDULOS (curso.html) ================= */
+.modulos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.modulo-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-gold);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: var(--transition-smooth);
+}
+
+.modulo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(198,156,109,0.15);
+}
+
+.modulo-card h4 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--dark-bg);
+}
+
+.modulo-card ul {
+    list-style: none;
+}
+
+.modulo-card li {
+    font-size: 14px;
+    color: var(--gray-text);
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.modulo-card li:last-child {
+    border-bottom: none;
+}
+
+.modulo-card li::before {
+    content: "✓ ";
+    color: var(--primary-gold);
+    font-weight: 600;
+    margin-right: 8px;
+}
+
 /* ================= RESPONSIVE ================= */
 @media (max-width: 992px) {
     .hero-container {
