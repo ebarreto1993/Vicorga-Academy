@@ -459,3 +459,11 @@ header {
         padding-bottom: 50px;
     }
 }
+
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 400px;
+        margin: 0 auto;
+        height: 600px;
+    }
+}
