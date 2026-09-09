@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/curso.css">
 </head>
 <body>
 
@@ -21,24 +22,60 @@
                 Volver
             </a>
             <a href="index.html" class="logo">
-                <img src="assets/images/LOGO_VICORGA1.png" alt="Vicorga Academy">
+                <img src="assets/images/LOGO_VICORGA.png" alt="Vicorga Academy">
             </a>
-            <div style="width: 80px;"></div>
+            
         </div>
     </div>
 </header>
 
-    <!-- HERO -->
-<section class="hero">
-    <div class="container">
-        <p class="subtitle">Carrera Profesional</p>
-        <h1>Maestría en Belleza</h1>
-        <p>Programa integral de formación profesional con 10 módulos especializados. Conviértete en un estilista experto dominando todas las áreas de la belleza, desde barbería hasta colorimetría.</p>
-        <div class="cta-buttons">
-            <a href="https://wa.me/593989330599" class="btn btn-primary" target="_blank">
-                <i class="fab fa-whatsapp"></i> Inscríbete ahora
-            </a>
-            <a href="#video" class="btn btn-outline">Ver demostración</a>
+<!-- HERO -->
+<section class="course-hero">
+    <div class="hero-texture"></div>
+    <div class="container course-hero-content">
+        <div class="hero-grid">
+            <div class="hero-text">
+                <span class="hero-badge"><i class="fas fa-crown"></i> Carrera Profesional</span>
+                <h1>Maestra <span>en Belleza</span></h1>
+                <p>Programa integral de formación profesional con 10 módulos especializados. Conviértete en un estilista experto dominando todas las áreas de la belleza, desde barbería hasta colorimetría.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/593989330599" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Inscríbete ahora
+                    </a>
+                    <a href="#video" class="btn btn-outline">
+                        <i class="fas fa-play"></i> Ver demostración
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-form">
+                <h3>Solicita información</h3>
+                                <form id="inscripcion-form-hero" class="inscripcion-form-hero">
+                    <input type="text" id="nombre-hero" placeholder="Nombre" required>
+                    <input type="text" id="apellido-hero" placeholder="Apellido" required>
+                    <input type="email" id="email-hero" placeholder="Correo electrónico" required>
+                    <input type="text" id="cedula-hero" placeholder="Cédula de identidad" required>
+                    <input type="tel" id="telefono-hero" placeholder="+593 9 XXXX XXXX" required>
+                    <input type="text" id="direccion-hero" placeholder="Dirección" required>
+                    <select id="carrera-hero" required>
+                        <option value="">Selecciona la carrera</option>
+                        <option value="Maestría en Belleza">Maestría en Belleza</option>
+                        <option value="Cosmetología">Cosmetología</option>
+                        <option value="Uñas">Uñas</option>
+                        <option value="Lashista">Lashista</option>
+                        <option value="Micropigmentación">Micropigmentación</option>
+                        <option value="Maquillaje">Maquillaje</option>
+                        <option value="Barbería">Barbería</option>
+                        <option value="Tatuajes">Tatuajes</option>
+                    </select>
+                    <select id="horario-hero" required>
+                        <option value="">Selecciona el horario</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
@@ -48,46 +85,19 @@
     <div class="container">
         <h2 class="section-title">Conoce la carrera</h2>
         <div class="video-container">
-            <iframe width="100%" height="600" src="https://www.youtube.com/embed/0MKHWl4ni28" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-</section>
-
-<!-- PDF PENSUM -->
-<section class="pdf-section">
-    <div class="container">
-        <h2 class="section-title">Pensum de estudios</h2>
-        <div class="pdf-content">
-            <div class="pdf-viewer">
-                <iframe src="assets/docs/PENSUM_DE_MAESTRA_EN_BELLEZA__2026.pdf" type="application/pdf"></iframe>
-            </div>
-            <div class="pdf-actions">
-                <div>
-                    <h3 style="font-family: var(--font-heading); font-size: 24px; margin-bottom: 15px;">Detalles del programa</h3>
-                    <p>Descarga el pensum completo para revisar con detalle todos los módulos, contenidos y evaluaciones que incluye la Maestría en Belleza.</p>
-                    <p style="margin-top: 15px; font-size: 13px; color: var(--primary-gold);">El documento incluye:</p>
-                    <ul style="list-style: none; margin-top: 10px;">
-                        <li style="font-size: 14px; color: var(--gray-text); padding: 8px 0;"><i class="fas fa-check" style="color: var(--primary-gold); margin-right: 10px;"></i>10 módulos integrales</li>
-                        <li style="font-size: 14px; color: var(--gray-text); padding: 8px 0;"><i class="fas fa-check" style="color: var(--primary-gold); margin-right: 10px;"></i>Contenidos por especialidad</li>
-                        <li style="font-size: 14px; color: var(--gray-text); padding: 8px 0;"><i class="fas fa-check" style="color: var(--primary-gold); margin-right: 10px;"></i>Criterios de evaluación</li>
-                        <li style="font-size: 14px; color: var(--gray-text); padding: 8px 0;"><i class="fas fa-check" style="color: var(--primary-gold); margin-right: 10px;"></i>Requisitos de certificación</li>
-                    </ul>
-                </div>
-                <a href="assets/docs/PENSUM_DE_MAESTRA_EN_BELLEZA__2026.pdf" download class="btn btn-primary">
-                    <i class="fas fa-download"></i> Descargar PDF
-                </a>
-            </div>
+           <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/67gy52tNyzg?si=CThvDIAQh8Tl-abl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
 </section>
 
 <!-- MÓDULOS -->
-<section class="modulos-section" style="background: var(--white);">
+<section class="modulos-section">
     <div class="container">
         <h2 class="section-title">10 módulos de la carrera</h2>
         <div class="modulos-grid">
             <div class="modulo-card">
-                <h4>1. Manicura y Pedicura</h4>
+                <span class="modulo-num">01</span>
+                <h4>Manicura y Pedicura</h4>
                 <ul>
                     <li>Manicura Rusa</li>
                     <li>Acrygel y Gel</li>
@@ -96,7 +106,8 @@
                 </ul>
             </div>
             <div class="modulo-card">
-                <h4>2. Maquillaje I - Skin Care</h4>
+                <span class="modulo-num">02</span>
+                <h4>Maquillaje I - Skin Care</h4>
                 <ul>
                     <li>Cuidado de la piel</li>
                     <li>Biotipos cutáneos</li>
@@ -105,7 +116,8 @@
                 </ul>
             </div>
             <div class="modulo-card">
-                <h4>3. Maquillaje II</h4>
+                <span class="modulo-num">03</span>
+                <h4>Maquillaje II</h4>
                 <ul>
                     <li>Diseño de cejas</li>
                     <li>Maquillaje de novia</li>
@@ -114,7 +126,8 @@
                 </ul>
             </div>
             <div class="modulo-card">
-                <h4>4. Lashes and Brows</h4>
+                <span class="modulo-num">04</span>
+                <h4>Lashes and Brows</h4>
                 <ul>
                     <li>Lifting y tinturado</li>
                     <li>Laminado de pestañas</li>
@@ -123,7 +136,8 @@
                 </ul>
             </div>
             <div class="modulo-card">
-                <h4>5. Peinados</h4>
+                <span class="modulo-num">05</span>
+                <h4>Peinados</h4>
                 <ul>
                     <li>Tipos de trenzas</li>
                     <li>Peinados para eventos</li>
@@ -132,7 +146,8 @@
                 </ul>
             </div>
             <div class="modulo-card">
-                <h4>6. Cortes de Dama</h4>
+                <span class="modulo-num">06</span>
+                <h4>Cortes de Dama</h4>
                 <ul>
                     <li>Corte solido 0° y 45°</li>
                     <li>Cortes semiredondo</li>
@@ -141,7 +156,8 @@
                 </ul>
             </div>
             <div class="modulo-card">
-                <h4>7. Tratamientos Capilares</h4>
+                <span class="modulo-num">07</span>
+                <h4>Tratamientos Capilares</h4>
                 <ul>
                     <li>Tratamiento de células madre</li>
                     <li>Botox capilar</li>
@@ -150,7 +166,8 @@
                 </ul>
             </div>
             <div class="modulo-card">
-                <h4>8. Tratamientos Faciales</h4>
+                <span class="modulo-num">08</span>
+                <h4>Tratamientos Faciales</h4>
                 <ul>
                     <li>Marco teórico</li>
                     <li>Exfoliación avanzada</li>
@@ -159,7 +176,8 @@
                 </ul>
             </div>
             <div class="modulo-card">
-                <h4>9. Barbería</h4>
+                <span class="modulo-num">09</span>
+                <h4>Barbería</h4>
                 <ul>
                     <li>Historia de la barbería</li>
                     <li>Taper fade</li>
@@ -168,7 +186,8 @@
                 </ul>
             </div>
             <div class="modulo-card">
-                <h4>10. Colorimetría</h4>
+                <span class="modulo-num">10</span>
+                <h4>Colorimetría</h4>
                 <ul>
                     <li>Teoría del color</li>
                     <li>Tabla del 12</li>
@@ -180,5 +199,109 @@
     </div>
 </section>
 
+<!-- REQUISITOS -->
+<section class="requisitos-section">
+    <div class="container">
+        <h2 class="section-title">Requisitos de inscripción</h2>
+        <div class="requisitos-grid">
+            <div class="req-card">
+                <div class="icon"><i class="fas fa-id-card"></i></div>
+                <h4>Cédula de identidad</h4>
+                <p>Documento de identidad vigente</p>
+            </div>
+            <div class="req-card">
+                <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                <h4>Certificado de estudios</h4>
+                <p>Bachillerato o equivalente</p>
+            </div>
+            <div class="req-card">
+                <div class="icon"><i class="fas fa-camera"></i></div>
+                <h4>Fotografías</h4>
+                <p>2 fotografías tamaño carnet</p>
+            </div>
+            <div class="req-card">
+                <div class="icon"><i class="fas fa-handshake"></i></div>
+                <h4>Entrevista</h4>
+                <p>Evaluación de admisión</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- PRICING -->
+<section class="pricing-section">
+    <div class="container">
+        <h2 class="section-title">Inversión</h2>
+        <div class="pricing-box">
+            <div class="pricing-item">
+                <span class="pricing-label">Matrícula</span>
+                <span class="pricing-value">$80</span>
+            </div>
+            <div class="pricing-item">
+                <span class="pricing-label">Mensualidad (Solo Sábados)</span>
+                <span class="pricing-value">$120</span>
+            </div>
+            <div class="pricing-note">
+                <strong>Incluye:</strong><br>
+                ✓ Chaqueta de la academia<br>
+                ✓ Guía de estudio<br>
+                ✓ Mochila<br>
+                ✓ Materiales para clases<br>
+                ✓ Certificado avalado<br>
+                <br>
+                <strong>Opcionales:</strong><br>
+                • Certificado con aval del Ministerio de Trabajo
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- UBICACIÓN Y MAPA -->
+<section class="ubicacion-section">
+    <div class="container">
+        <h2 class="section-title">Ubicación y Contacto</h2>
+        <div class="ubicacion-grid">
+            <div class="ubicacion-info">
+                <h3>Visítanos</h3>
+                <div class="ubicacion-item">
+                    <i class="fas fa-map-pin"></i>
+                    <div>
+                        <strong>Dirección</strong><br>
+                        Juan León Mera 3-75 y Juan José Flores<br>
+                        (Detrás de Aprofe de la Huayna Capac)<br>
+                        Quito, Ecuador
+                    </div>
+                </div>
+                <div class="ubicacion-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Teléfono</strong><br>
+                        +593 989 330 599
+                    </div>
+                </div>
+                <div class="ubicacion-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Correo</strong><br>
+                        vicorgamakeupstudio@gmail.com
+                    </div>
+                </div>
+                <div class="ubicacion-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Horarios</strong><br>
+                        Lunes a Sábado: 9:00 AM - 7:00 PM
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.70763643096!2d-78.99848622502985!3d-2.9003268970761313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91cd19442c893df1%3A0xf1a4349a2c3eef90!2sVicorga%20Academy!5e0!3m2!1ses-419!2sec!4v1788822985832!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/curso.js"></script>
 </body>
 </html>
