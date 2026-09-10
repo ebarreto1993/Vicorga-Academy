@@ -42,108 +42,151 @@ const carrerasHorarios = {
     ]
 };
 
-// Actualizar horarios cuando cambia la carrera
-document.getElementById('carrera-hero').addEventListener('change', function() {
-    const carreraSeleccionada = this.value;
+// Obtener parámetro de URL
+const params = new URLSearchParams(window.location.search);
+const carreraParam = params.get('carrera') || 'maestria-belleza';
+const carreraData = carreras[carreraParam];
+
+// Si la carrera no existe, redirigir
+if (!carreraData) {
+    window.location.href = 'curso.html?carrera=maestria-belleza';
+}
+
+// Esperar a que el DOM esté listo
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Actualizar hero
+    const h1 = document.querySelector('.course-hero h1');
+    if (h1) {
+        const palabras = carreraData.nombre.split(' ');
+        const primera = palabras[0];
+        const resto = palabras.slice(1).join(' ');
+        h1.innerHTML = primera + ' <span>' + resto + '</span>';
+    }
+    
+    // Actualizar descripción
+    const descripcion = document.querySelector('.course-hero > .container.course-hero-content > .hero-grid > .hero-text > p');
+    if (descripcion) {
+        descripcion.textContent = carreraData.descripcion;
+    }
+    
+    // Actualizar video
+    const iframe = document.querySelector('.video-container iframe');
+    if (iframe) {
+        iframe.src = `https://www.youtube.com/embed/${carreraData.videoId}`;
+    }
+    
+    // Actualizar módulos
+    const modulosGrid = document.querySelector('.modulos-grid');
+    if (modulosGrid) {
+        modulosGrid.innerHTML = '';
+        carreraData.modulos.forEach(modulo => {
+            const card = document.createElement('div');
+            card.className = 'modulo-card';
+            card.innerHTML = `
+                <span class="modulo-num">${modulo.numero}</span>
+                <h4>${modulo.nombre}</h4>
+                <ul>
+                    ${modulo.temas.map(tema => `<li>${tema}</li>`).join('')}
+                </ul>
+            `;
+            modulosGrid.appendChild(card);
+        });
+    }
+    
+    // Actualizar precios
+    const pricingBox = document.querySelector('.pricing-box');
+    if (pricingBox) {
+        pricingBox.innerHTML = `
+            <div class="pricing-item">
+                <span class="pricing-label">Matrícula</span>
+                <span class="pricing-value">$${carreraData.matricula}</span>
+            </div>
+            <div class="pricing-item">
+                <span class="pricing-label">Mensualidad</span>
+                <span class="pricing-value">$${carreraData.mensualidad}</span>
+            </div>
+            <div class="pricing-note">
+                <strong>Incluye:</strong><br>
+                ${carreraData.incluye.map(item => `✓ ${item}`).join('<br>')}
+            </div>
+        `;
+    }
+    
+    // Pre-llenar carrera y horarios
+    const carreraSelect = document.getElementById('carrera-hero');
+    if (carreraSelect) {
+        carreraSelect.value = carreraData.nombre;
+        llenarHorarios(carreraData.nombre);
+    }
+    
+});
+
+// Función para llenar horarios
+function llenarHorarios(nombreCarrera) {
     const horarioSelect = document.getElementById('horario-hero');
+    if (!horarioSelect) return;
     
     horarioSelect.innerHTML = '<option value="">Selecciona el horario</option>';
     
-    if (carreraSeleccionada && carrerasHorarios[carreraSeleccionada]) {
-        carrerasHorarios[carreraSeleccionada].forEach(horario => {
+    if (carrerasHorarios[nombreCarrera]) {
+        carrerasHorarios[nombreCarrera].forEach(horario => {
             const option = document.createElement('option');
             option.value = horario;
             option.textContent = horario;
             horarioSelect.appendChild(option);
         });
     }
+}
+
+// Event listener para cambiar horarios
+document.addEventListener('DOMContentLoaded', function() {
+    const carreraSelect = document.getElementById('carrera-hero');
+    if (carreraSelect) {
+        carreraSelect.addEventListener('change', function() {
+            if (this.value) {
+                llenarHorarios(this.value);
+            }
+        });
+    }
 });
 
 // Enviar formulario a WhatsApp
-document.getElementById('inscripcion-form-hero').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const nombre = document.getElementById('nombre-hero').value;
-    const apellido = document.getElementById('apellido-hero').value;
-    const email = document.getElementById('email-hero').value;
-    const cedula = document.getElementById('cedula-hero').value;
-    const telefono = document.getElementById('telefono-hero').value;
-    const direccion = document.getElementById('direccion-hero').value;
-    const carrera = document.getElementById('carrera-hero').value;
-    const horario = document.getElementById('horario-hero').value;
-    
-    const mensaje = `Hola, me interesa inscribirme:%0A%0ANombre: ${nombre} ${apellido}%0ACorreo: ${email}%0ACédula: ${cedula}%0ATelefono: ${telefono}%0ADirección: ${direccion}%0ACarrera: ${carrera}%0AHorario: ${horario}`;
-    
-    window.open(`https://wa.me/593989330599?text=${mensaje}`, '_blank');
-});
-
-// Validar email
-function validarEmail(email) {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
-}
-
-// Validar cédula ecuatoriana (10 dígitos)
-function validarCedula(cedula) {
-    return /^\d{10}$/.test(cedula);
-}
-
-// Validar teléfono (mínimo 10 dígitos)
-function validarTelefono(telefono) {
-    return /^\d{10,}$/.test(telefono.replace(/\D/g, ''));
-}
-
-// Enviar formulario a WhatsApp
-document.getElementById('inscripcion-form-hero').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const nombre = document.getElementById('nombre-hero').value.trim();
-    const apellido = document.getElementById('apellido-hero').value.trim();
-    const email = document.getElementById('email-hero').value.trim();
-    const cedula = document.getElementById('cedula-hero').value.trim();
-    const telefono = document.getElementById('telefono-hero').value.trim();
-    const direccion = document.getElementById('direccion-hero').value.trim();
-    const carrera = document.getElementById('carrera-hero').value;
-    const horario = document.getElementById('horario-hero').value;
-    
-    // Validaciones
-    if (!nombre || !apellido) {
-        alert('Por favor completa nombre y apellido');
-        return;
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('inscripcion-form-hero');
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nombre = document.getElementById('nombre-hero').value.trim();
+            const apellido = document.getElementById('apellido-hero').value.trim();
+            const direccion = document.getElementById('direccion-hero').value.trim();
+            const carrera = document.getElementById('carrera-hero').value;
+            const horario = document.getElementById('horario-hero').value;
+            
+            if (!nombre || !apellido) {
+                alert('Por favor completa nombre y apellido');
+                return;
+            }
+            
+            if (!direccion) {
+                alert('Por favor completa la dirección');
+                return;
+            }
+            
+            if (!carrera) {
+                alert('Por favor selecciona una carrera');
+                return;
+            }
+            
+            if (!horario) {
+                alert('Por favor selecciona un horario');
+                return;
+            }
+            
+            const mensaje = `Hola, me interesa inscribirme:%0A%0ANombre: ${nombre} ${apellido}%0ADirección: ${direccion}%0ACarrera: ${carrera}%0AHorario: ${horario}`;
+            
+            window.open(`https://wa.me/593989330599?text=${mensaje}`, '_blank');
+        });
     }
-    
-    if (!validarEmail(email)) {
-        alert('Por favor ingresa un correo válido (ej: correo@ejemplo.com)');
-        return;
-    }
-    
-    if (!validarCedula(cedula)) {
-        alert('La cédula debe tener 10 dígitos');
-        return;
-    }
-    
-    if (!validarTelefono(telefono)) {
-        alert('El teléfono debe tener al menos 10 dígitos');
-        return;
-    }
-    
-    if (!direccion) {
-        alert('Por favor completa la dirección');
-        return;
-    }
-    
-    if (!carrera) {
-        alert('Por favor selecciona una carrera');
-        return;
-    }
-    
-    if (!horario) {
-        alert('Por favor selecciona un horario');
-        return;
-    }
-    
-    // Si todo es válido, enviar a WhatsApp
-    const mensaje = `Hola, me interesa inscribirme:%0A%0ANombre: ${nombre} ${apellido}%0ACorreo: ${email}%0ACédula: ${cedula}%0ATeléfono: ${telefono}%0ADirección: ${direccion}%0ACarrera: ${carrera}%0AHorario: ${horario}`;
-    
-    window.open(`https://wa.me/593989330599?text=${mensaje}`, '_blank');
 });
