@@ -5,6 +5,7 @@ const carreras = {
         descripcion: "Programa integral de formación profesional con 10 módulos especializados. Conviértete en un estilista experto dominando todas las áreas de la belleza, desde barbería hasta colorimetría.",
         duracion: "10 meses (sábados) o 5 meses (2x semana)",
         videoId: "67gy52tNyzg",
+        imagenFondo: "https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=1200",
         modulos: [
             { numero: "01", nombre: "Manicura y Pedicura", temas: ["Manicura Rusa", "Acrygel y Gel", "Diseños 3D", "Acrílico full cover"] },
             { numero: "02", nombre: "Maquillaje I - Skin Care", temas: ["Cuidado de la piel", "Biotipos cutáneos", "Hidratación avanzada", "Corriente galvánica"] },
@@ -26,11 +27,12 @@ const carreras = {
             "Lunes y Miércoles 6:00 PM - 9:00 PM"
         ]
     },
-        "cosmetologia": {
+    "cosmetologia": {
         nombre: "Cosmetología",
         descripcion: "Especialización en ciencias cosméticas y tratamientos estéticos avanzados. Conviértete en una experta en cosmetología, cosmiatría y dermocosmiatría. Duración: 6 meses.",
         duracion: "6 meses",
         videoId: "dummyId123",
+        imagenFondo: "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=1200",
         modulos: [
             { numero: "01", nombre: "Fundamentos de Cosmetología", temas: ["Célula y piel", "Biotipos cutáneos", "Lesiones elementales", "Dermis y epidermis"] },
             { numero: "02", nombre: "Tratamientos Faciales", temas: ["Higiene facial", "Exfoliación", "Hidratación profunda", "Masaje facial"] },
@@ -46,12 +48,12 @@ const carreras = {
             "Sábados 9:00 AM - 4:00 PM"
         ]
     },
-
-        "unas": {
+    "unas": {
         nombre: "Uñas",
         descripcion: "Maestra en taller de manicura y pedicura. Domina todas las técnicas profesionales de diseño y aplicación. Duración: 5 meses.",
         duracion: "5 meses",
         videoId: "dummyId124",
+        imagenFondo: "https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=1200",
         modulos: [
             { numero: "01", nombre: "Manicura Rusa", temas: ["Técnica de manicura rusa", "Herramientas especializadas", "Cuidado de cutículas", "Diseños básicos"] },
             { numero: "02", nombre: "Técnicas Acrílico", temas: ["Acrígel básico", "Acrígel encapsulado", "Acrílico full cover", "Reparación y mantenimiento"] },
@@ -68,12 +70,12 @@ const carreras = {
             "Sábados 9:00 AM - 4:00 PM"
         ]
     },
-
-        "lashista": {
+    "lashista": {
         nombre: "Lashista",
         descripcion: "Conviértete en lashista profesional en tan solo 3 meses. Curso exclusivo de 3 módulos donde te convertirás en especialista de miradas con extensiones de pestañas.",
         duracion: "3 meses",
         videoId: "dummyId126",
+        imagenFondo: "https://images.pexels.com/photos/5128220/pexels-photo-5128220.jpeg?auto=compress&cs=tinysrgb&w=1200",
         modulos: [
             { numero: "01", nombre: "Fundamentos de Lashista", temas: ["Anatomía del párpado", "Tipos de pestañas naturales", "Herramientas profesionales", "Seguridad e higiene"] },
             { numero: "02", nombre: "Técnica de Extensiones", temas: ["Técnica clásica", "Técnica volumen ruso", "Aplicación de extensiones", "Retoque y mantenimiento"] },
@@ -86,11 +88,12 @@ const carreras = {
             "Jueves 9:00 AM - 12:00 PM"
         ]
     },
-        "micropigmentacion": {
+    "micropigmentacion": {
         nombre: "Micropigmentación",
         descripcion: "Aprende micropigmentación facial: cejas, labios y perfilado con técnicas de precisión. Especialización en 6 meses. Conviértete en una experta en esta técnica semipermanente.",
         duracion: "6 meses",
         videoId: "dummyId125",
+        imagenFondo: "https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?auto=compress&cs=tinysrgb&w=1200",
         modulos: [
             { numero: "01", nombre: "Fundamentos de Micropigmentación", temas: ["Historia de la micropigmentación", "Técnicas básicas", "Equipos y herramientas", "Seguridad e higiene"] },
             { numero: "02", nombre: "Diseño de Cejas", temas: ["Análisis facial", "Formas de cejas", "Diseño personalizado", "Técnica de aplicación"] },
@@ -106,12 +109,12 @@ const carreras = {
             "Viernes 2:00 PM - 5:00 PM"
         ]
     },
-
-        "maquillaje": {
+    "maquillaje": {
         nombre: "Maquillaje",
         descripcion: "Titúlate como maquilladora profesional en tan solo 4 meses. Domina técnicas de maquillaje artístico, de novia, y peinado profesional. Alto rendimiento.",
         duracion: "4 meses",
         videoId: "dummyId127",
+        imagenFondo: "https://images.pexels.com/photos/2688992/pexels-photo-2688992.jpeg?auto=compress&cs=tinysrgb&w=1200",
         modulos: [
             { numero: "01", nombre: "Fundamentos de Maquillaje", temas: ["Teoría del color", "Biotipos de piel", "Preparación de la piel", "Herramientas y brochas"] },
             { numero: "02", nombre: "Maquillaje de Día y Noche", temas: ["Maquillaje natural", "Maquillaje de noche", "Contouring básico", "Técnicas de iluminación"] },
@@ -125,12 +128,12 @@ const carreras = {
             "Martes 9:00 AM - 4:00 PM"
         ]
     },
-
-        "barberia": {
+    "barberia": {
         nombre: "Barbería",
         descripcion: "Titúlate como técnico profesional en barbería en tan solo 4 meses. Domina cortes modernos, técnicas de barba y servicio profesional. Cupos limitados a 8 estudiantes.",
         duracion: "4 meses (sábados) o 3 meses (lunes-miércoles)",
         videoId: "dummyId128",
+        imagenFondo: "https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=1200",
         modulos: [
             { numero: "01", nombre: "Historia y Fundamentos de Barbería", temas: ["Historia de la barbería", "Técnicas clásicas", "Herramientas profesionales", "Seguridad e higiene"] },
             { numero: "02", nombre: "Cortes Clásicos", temas: ["Corte sólido 0° y 45°", "Taper fade", "Mohicano", "Skin fade"] },
@@ -145,12 +148,12 @@ const carreras = {
             "Lunes y Miércoles 9:00 AM - 4:00 PM (3 meses)"
         ]
     },
-
     "tatuajes": {
         nombre: "Tatuajes",
         descripcion: "Aprende técnicas de tatuaje profesional, higiene, diseño y arte corporal. Conviértete en tatuador certificado con los más altos estándares de seguridad.",
         duracion: "6 meses",
         videoId: "dummyId129",
+        imagenFondo: "https://images.pexels.com/photos/2183131/pexels-photo-2183131.jpeg?auto=compress&cs=tinysrgb&w=1200",
         modulos: [
             { numero: "01", nombre: "Fundamentos de Tatuaje", temas: ["Historia del tatuaje", "Anatomía de la piel", "Teoría del color", "Equipos y herramientas"] },
             { numero: "02", nombre: "Técnicas de Tatuaje", temas: ["Técnica de línea", "Técnica de sombreado", "Técnica de relleno", "Blending y degradado"] },
@@ -166,4 +169,7 @@ const carreras = {
             "Viernes 1:00 PM - 8:00 PM",
             "Sábados 10:00 AM - 6:00 PM"
         ]
-    },
+    }
+};
+
+    

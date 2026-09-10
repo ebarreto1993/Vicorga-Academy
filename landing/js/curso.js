@@ -77,20 +77,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Actualizar módulos
-    const modulosGrid = document.querySelector('.modulos-grid');
-    if (modulosGrid) {
-        modulosGrid.innerHTML = '';
+    const modulosList = document.querySelector('.modulos-list');
+    if (modulosList) {
+        modulosList.innerHTML = '';
         carreraData.modulos.forEach(modulo => {
-            const card = document.createElement('div');
-            card.className = 'modulo-card';
-            card.innerHTML = `
-                <span class="modulo-num">${modulo.numero}</span>
-                <h4>${modulo.nombre}</h4>
-                <ul>
-                    ${modulo.temas.map(tema => `<li>${tema}</li>`).join('')}
-                </ul>
+            const row = document.createElement('div');
+            row.className = 'modulo-row animate-slide-up';
+            row.innerHTML = `
+                <div class="modulo-left">
+                    <span class="modulo-num">${modulo.numero}</span>
+                    <i class="fas fa-hand-sparkles modulo-icon"></i>
+                </div>
+                <div class="modulo-center">
+                    <h4>${modulo.nombre}</h4>
+                    <ul>
+                        ${modulo.temas.map(tema => `<li>${tema}</li>`).join('')}
+                    </ul>
+                </div>
+                <div class="modulo-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="modulo-image-wrapper">
+                    <img src="https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=600" alt="${modulo.nombre}">
+                </div>
             `;
-            modulosGrid.appendChild(card);
+            modulosList.appendChild(row);
         });
     }
     
