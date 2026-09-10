@@ -166,4 +166,4 @@ const carreras = {
             "Viernes 1:00 PM - 8:00 PM",
             "Sábados 10:00 AM - 6:00 PM"
         ]
-    }
+    },
