@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
         iframe.src = `https://www.youtube.com/embed/${carreraData.videoId}`;
     }
     
-    // Actualizar módulos
+        // Actualizar módulos
     const modulosList = document.querySelector('.modulos-list');
     if (modulosList) {
         modulosList.innerHTML = '';
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
             row.innerHTML = `
                 <div class="modulo-left">
                     <span class="modulo-num">${modulo.numero}</span>
-                    <i class="fas fa-hand-sparkles modulo-icon"></i>
+                    <i class="${modulo.icono} modulo-icon"></i>
                 </div>
                 <div class="modulo-center">
                     <h4>${modulo.nombre}</h4>
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="modulo-arrow"><i class="fas fa-arrow-right"></i></div>
                 <div class="modulo-image-wrapper">
-                    <img src="https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=600" alt="${modulo.nombre}">
+                    <img src="${modulo.imagen}" alt="${modulo.nombre}">
                 </div>
             `;
             modulosList.appendChild(row);
