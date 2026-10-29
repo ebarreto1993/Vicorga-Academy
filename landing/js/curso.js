@@ -1,46 +1,21 @@
-// Datos de carreras con horarios
-const carrerasHorarios = {
-    "Maestría en Belleza": [
-        "Martes y Jueves 9:00 AM - 4:00 PM",
-        "Sábados 9:00 AM - 4:00 PM",
-        "Lunes y Miércoles 6:00 PM - 9:00 PM"
-    ],
-    "Cosmetología": [
-        "Lunes y Miércoles 10:00 AM - 3:00 PM",
-        "Viernes 8:00 AM - 5:00 PM",
-        "Sábados 2:00 PM - 7:00 PM"
-    ],
-    "Uñas": [
-        "Martes y Jueves 1:00 PM - 6:00 PM",
-        "Sábados 10:00 AM - 3:00 PM",
-        "Miércoles 9:00 AM - 2:00 PM"
-    ],
-    "Lashista": [
-        "Lunes y Miércoles 2:00 PM - 7:00 PM",
-        "Viernes 9:00 AM - 4:00 PM",
-        "Sábados 11:00 AM - 4:00 PM"
-    ],
-    "Micropigmentación": [
-        "Martes 8:00 AM - 3:00 PM",
-        "Jueves 10:00 AM - 5:00 PM",
-        "Sábados 9:00 AM - 2:00 PM"
-    ],
-    "Maquillaje": [
-        "Lunes y Miércoles 11:00 AM - 4:00 PM",
-        "Viernes 1:00 PM - 6:00 PM",
-        "Sábados 10:00 AM - 5:00 PM"
-    ],
-    "Barbería": [
-        "Martes a Viernes 9:00 AM - 5:00 PM",
-        "Sábados 8:00 AM - 3:00 PM",
-        "Lunes 3:00 PM - 8:00 PM"
-    ],
-    "Tatuajes": [
-        "Martes y Jueves 2:00 PM - 7:00 PM",
-        "Viernes 1:00 PM - 8:00 PM",
-        "Sábados 10:00 AM - 6:00 PM"
-    ]
-};
+// Función para llenar horarios (ahora usa los datos dinámicos de carreras)
+function llenarHorarios(nombreCarrera) {
+    const horarioSelect = document.getElementById('horario-hero');
+    horarioSelect.innerHTML = '<option value="">Selecciona el horario</option>';
+    
+    // Buscar la carrera en el objeto carreras y usar sus horarios
+    for (const key in carreras) {
+        if (carreras[key].nombre === nombreCarrera) {
+            carreras[key].horarios.forEach(horario => {
+                const option = document.createElement('option');
+                option.value = horario;
+                option.textContent = horario;
+                horarioSelect.appendChild(option);
+            });
+            break;
+        }
+    }
+}
 
 // Obtener parámetro de URL
 const params = new URLSearchParams(window.location.search);
@@ -103,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Actualizar precios
+     // Actualizar precios
     const pricingBox = document.querySelector('.pricing-box');
     if (pricingBox) {
         pricingBox.innerHTML = `
@@ -116,8 +91,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span class="pricing-value">$${carreraData.mensualidad}</span>
             </div>
             <div class="pricing-note">
-                <strong>Incluye:</strong><br>
-                ${carreraData.incluye.map(item => `✓ ${item}`).join('<br>')}
+                <strong>✓ INCLUYE:</strong><br>
+                ${carreraData.incluye.map(item => `• ${item}`).join('<br>')} <br><br>
+                
+                <strong>💳 MÉTODOS DE PAGO:</strong><br>
+                <strong>Banco Pichincha:</strong> Cta. Ahorros 2100197919<br>
+                <strong>Banco Austro:</strong> Cta. Ahorros 0200485416<br>
+                <strong>Cooperativa Azuayo:</strong> Cta. Ahorros 2656300<br>
+                <strong>Banco Guayaquil:</strong> Cta. Ahorros 23362869<br><br>
+                <em>A nombre de: Joselyn Zuelen Pineda Cordova<br>
+                Cédula: #0152089298</em><br><br>
+                
+                <strong>⚠️ NOTAS IMPORTANTES:</strong><br>
+                • Examen final obligatorio para recibir tu certificación<br>
+                • Puedes reservar tu cupo con $20 e ir haciendo abonos poco a poco<br>
+                • La matrícula y pensión deben estar pagadas hasta el día de inicio<br>
+                <strong>• Los valores cancelados o abonados NO son reembolsables bajo ningún motivo.</strong>
             </div>
         `;
     }
@@ -131,20 +120,23 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 
-// Función para llenar horarios
+
+// Función para llenar horarios (ahora usa los datos dinámicos de carreras)
 function llenarHorarios(nombreCarrera) {
     const horarioSelect = document.getElementById('horario-hero');
-    if (!horarioSelect) return;
-    
     horarioSelect.innerHTML = '<option value="">Selecciona el horario</option>';
     
-    if (carrerasHorarios[nombreCarrera]) {
-        carrerasHorarios[nombreCarrera].forEach(horario => {
-            const option = document.createElement('option');
-            option.value = horario;
-            option.textContent = horario;
-            horarioSelect.appendChild(option);
-        });
+    // Buscar la carrera en el objeto carreras y usar sus horarios
+    for (const key in carreras) {
+        if (carreras[key].nombre === nombreCarrera) {
+            carreras[key].horarios.forEach(horario => {
+                const option = document.createElement('option');
+                option.value = horario;
+                option.textContent = horario;
+                horarioSelect.appendChild(option);
+            });
+            break;
+        }
     }
 }
 

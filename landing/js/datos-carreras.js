@@ -40,7 +40,7 @@ const carreras = {
         ],
         matricula: 80,
         mensualidad: 150,
-        incluye: ["30% de material por módulo", "Uniforme completo", "Mochila de la academia"],
+        incluye: ["30% de material para prácticas en clases por módulo", "Uniforme completo", "Mochila de la academia"],
         horarios: [
             "Martes y Jueves 29 de septiembre 9:00 AM - 4:00 PM",
             "Sábados 3 de octubre 9:00 AM - 4:00 PM"
