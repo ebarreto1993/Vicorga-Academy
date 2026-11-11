@@ -90,88 +90,6 @@ header {
     border: none;
 }
 
-/* ================= MÓDULOS (curso.html) ================= 
-.modulos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-.modulo-card {
-    background: var(--white);
-    padding: 30px;
-    border-radius: 8px;
-    border-left: 4px solid var(--primary-gold);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: var(--transition-smooth);
-}
-.modulo-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(198,156,109,0.15);
-}
-.modulo-card h4 {
-    font-family: var(--font-heading);
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: var(--dark-bg);
-}
-.modulo-card ul { list-style: none; }
-.modulo-card li {
-    font-size: 14px;
-    color: var(--gray-text);
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-.modulo-card li:last-child { border-bottom: none; }
-.modulo-card li::before {
-    content: "✓ ";
-    color: var(--primary-gold);
-    font-weight: 600;
-    margin-right: 8px;
-}
-
-* ================= MÓDULOS - MODERNIZADO ================= *
-.modulo-card {
-    position: relative;
-    background: var(--white);
-    padding: 36px 30px 30px;
-    border-radius: 12px;
-    border: 1px solid rgba(0,0,0,0.06);
-    border-left: none;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-    transition: var(--transition-smooth);
-    overflow: hidden;
-}
-
-.modulo-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 4px; height: 100%;
-    background: linear-gradient(180deg, var(--primary-gold), var(--primary-gold-hover));
-}
-
-.modulo-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(198,156,109,0.25);
-    border-color: rgba(198,156,109,0.3);
-}
-
-.modulo-num {
-    display: block;
-    font-family: var(--font-heading);
-    font-size: 42px;
-    font-weight: 600;
-    color: rgba(198,156,109,0.25);
-    line-height: 1;
-    margin-bottom: 8px;
-    transition: var(--transition-smooth);
-}
-
-.modulo-card:hover .modulo-num {
-    color: rgba(198,156,109,0.5);
-}
-*/
-
 /* ================= MÓDULOS - LISTA PREMIUM (curso.html) ================= */
 .modulos-section.dark-theme {
     background-color: #111111;
@@ -340,6 +258,108 @@ header {
 
 .animate-slide-up {
     animation: slideUpFade 0.8s ease backwards;
+}
+/* ===== POR QUÉ ELEGIR VICORGA ===== */
+.why-section {
+    position: relative;
+    padding: 90px 0;
+    background: #111111 url('../assets/images/porque.jpg') center / cover no-repeat;
+}
+
+.why-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+        rgba(17, 17, 17, 0.50) 0%,
+        rgba(17, 17, 17, 0.80) 40%,
+        rgba(17, 17, 17, 0.92) 100%);
+}
+
+.why-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Bloque derecho: título + tarjetas */
+.why-box {
+    width: 68%;
+    margin-left: auto;
+}
+
+.why-title {
+    font-family: var(--font-heading);
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 500;
+    text-align: center;
+    color: var(--primary-gold);
+    margin-bottom: 40px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.why-card {
+    background: #fbf7f1;
+    border-radius: 10px;
+    padding: 22px 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+}
+
+.why-card-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.why-icon {
+    font-size: 28px;
+    color: #b8895a;
+    flex-shrink: 0;
+}
+
+.why-card h3 {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #1a1a1a;
+}
+
+.why-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666666;
+}
+
+/* Barra de estadísticas sobre fondo oscuro */
+.why-section .stats-bar {
+    margin-top: 50px;
+    background: rgba(17, 17, 17, 0.65);
+    border: 1px solid rgba(198, 156, 109, 0.25);
+}
+
+/* Tablet y celular */
+@media (max-width: 992px) {
+    .why-box {
+        width: 100%;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-overlay {
+        background: rgba(17, 17, 17, 0.85);
+    }
 }
 
 /* Responsive */

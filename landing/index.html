@@ -58,7 +58,10 @@
                 <button
                     class="menu-toggle"
                     id="menu-toggle"
+                    type="button"
                     aria-label="Abrir menú"
+                    aria-expanded="false"
+                    aria-controls="nav-menu"
                 >
                     <span></span>
                     <span></span>
@@ -69,47 +72,20 @@
         </div>
     </header>
 
-
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
-
         <!-- HERO -->
-        <section class="hero" id="inicio">
-            <div class="container hero-container">
-
-                <div class="hero-content animate-fade-up">
-                    <p class="subtitle">
-                        TRANSFORMA TU PASIÓN EN TU PROFESIÓN
-                    </p>
-
-                    <h1 class="hero-title">
-                        Academia de<br>
-                        <span>Belleza Vicorga</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        Formamos expertos en belleza con educación de calidad,
-                        práctica y actualizada. Aprende un oficio que sí abre puertas.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#nosotros" class="btn btn-dark">
-                            Conoce más
-                        </a>
-
-                        <a href="#cursos" class="btn btn-text">
-                            Nuestros cursos
-                            <span class="arrow">→</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="hero-media animate-fade-in">
-                    <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/e3Vi7y_dB3Q?si=nbDOWpW-GpXdblXa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-                </div>
-
+        <section class="hero-full" id="inicio">
+            <div class="hero-full-overlay"></div>
+            <div class="container hero-full-content animate-fade-up">
+                <p class="subtitle">TRANSFORMA TU PASIÓN EN TU PROFESIÓN</p>
+                <h1 class="hero-full-title">
+                    Haz de tu talento<br>
+                    <span>Tu mejor negocio.</span>
+                </h1>
+                <p class="hero-full-text">
+                    Formamos expertos en belleza con educación de calidad,
+                    práctica y actualizada. Aprende un oficio que sí abre puertas.
+                </p>
+                <a href="#cursos" class="btn-pill">Ver cursos</a>
             </div>
         </section>
 
@@ -124,8 +100,10 @@
                         class="subtitle"
                         style="text-align: center;"
                     >
-                        NUESTROS CURSOS
+                        FORMACIÓN PROFESIONAL
                     </p>
+                    <h2 class="courses-title">Descubre tu próxima <em>especialidad</em></h2>
+                    <p class="courses-description">Ocho carreras para desarrollar tu talento y dar el siguiente paso.</p>
             <!-- Navegación por iconos -->
             <div class="course-nav">
 
@@ -319,107 +297,64 @@
             </div>
         </section>
 
+<!-- POR QUÉ ELEGIR VICORGA -->
+<section class="why-section" id="nosotros">
+    <div class="why-overlay"></div>
 
-        <!-- POR QUÉ ELEGIR VICORGA -->
-        <section class="features" id="nosotros">
-            <div class="container">
+    <div class="container why-content">
 
-                <div class="section-header animate-fade-up">
+        <div class="why-box">
+            <h2 class="why-title animate-fade-up">¿Por qué elegir Vicorga?</h2>
 
-                    <p
-                        class="subtitle"
-                        style="text-align: center;"
-                    >
-                        POR QUÉ ELEGIR VICORGA
-                    </p>
+            <div class="why-grid">
 
-                    <h2 class="section-title">
-                        Una formación diseñada para<br>
-                        <span>tu éxito profesional</span>
-                    </h2>
-
+                <div class="why-card animate-fade-up">
+                    <div class="why-card-head">
+                        <i class="fas fa-graduation-cap why-icon"></i>
+                        <h3>Práctica Real Garantizada</h3>
+                    </div>
+                    <p>Aprende desde el primer día con modelos reales y herramientas profesionales.</p>
                 </div>
 
-
-                <!-- CARACTERÍSTICAS -->
-                <div class="features-grid">
-
-                    <div class="feature-card animate-fade-up">
-                        <div class="feature-icon">✨</div>
-
-                        <h3>
-                            Práctica Real Garantizada
-                        </h3>
-
-                        <p>
-                            Aprende haciendo desde el primer día con modelos
-                            reales y herramientas profesionales de vanguardia.
-                        </p>
+                <div class="why-card animate-fade-up">
+                    <div class="why-card-head">
+                        <i class="fas fa-certificate why-icon"></i>
+                        <h3>Certificación Profesional</h3>
                     </div>
-
-
-                    <div class="feature-card animate-fade-up">
-                        <div class="feature-icon">📜</div>
-
-                        <h3>
-                            Certificación Profesional
-                        </h3>
-
-                        <p>
-                            Obtén un título avalado que respalde tu talento
-                            y te abra las puertas en la industria de la belleza.
-                        </p>
-                    </div>
-
-
-                    <div class="feature-card animate-fade-up">
-                        <div class="feature-icon">👥</div>
-
-                        <h3>
-                            Grupos Reducidos
-                        </h3>
-
-                        <p>
-                            Atención personalizada de instructores expertos
-                            para asegurar que perfecciones cada técnica.
-                        </p>
-                    </div>
-
+                    <p>Obtén un título avalado que respalde tu talento.</p>
                 </div>
 
-
-                <!-- ESTADÍSTICAS -->
-                <div class="stats-bar animate-fade-up">
-
-                    <div class="stat-item">
-                        <span class="stat-number">+1,500</span>
-                        <span class="stat-label">
-                            Egresados Exitosos
-                        </span>
+                <div class="why-card animate-fade-up">
+                    <div class="why-card-head">
+                        <i class="fas fa-users why-icon"></i>
+                        <h3>Grupos Reducidos</h3>
                     </div>
-
-                    <div class="stat-divider"></div>
-
-                    <div class="stat-item">
-                        <span class="stat-number">+5</span>
-                        <span class="stat-label">
-                            Años de Experiencia
-                        </span>
-                    </div>
-
-                    <div class="stat-divider"></div>
-
-                    <div class="stat-item">
-                        <span class="stat-number">98%</span>
-                        <span class="stat-label">
-                            Inserción Laboral
-                        </span>
-                    </div>
-
+                    <p>Atención personalizada de instructores expertos para asegurar tu aprendizaje.</p>
                 </div>
 
             </div>
-        </section>
+        </div>
+
+        <!-- ESTADÍSTICAS -->
+        <div class="stats-bar animate-fade-up">
+            <div class="stat-item">
+                <span class="stat-number">+1,500</span>
+                <span class="stat-label">Egresados Exitosos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">+5</span>
+                <span class="stat-label">Años de Experiencia</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Inserción Laboral</span>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <!-- Sección de Testimonios -->
         <section class="testimonials" id="testimonios">
@@ -514,6 +449,9 @@
     <a href="https://www.tiktok.com/@vicorgaacademy" target="_blank" title="TikTok">
         <i class="fab fa-tiktok"></i>
     </a>
+</div>
+<div class="footer-avales">
+    <img src="assets/images/logojna.png" alt="Ministerio del Trabajo y Junta Nacional de Defensa del Artesano (JNDA)">
 </div>
                 </div>
 
