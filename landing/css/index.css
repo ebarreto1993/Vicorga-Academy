@@ -90,23 +90,27 @@
 }
 
 /* Celular */
+.hero-mobile-photo { display:none; }
 @media (max-width: 768px) {
     .hero-full {
-        align-items: flex-end;
-        padding-bottom: 40px;
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        min-height:0;
+        padding:var(--header-h) 0 40px;
+        background:#111111;
     }
 
     .hero-full::before {
-        width: 100%;
-        background-position: 70% 20%;
+        display:none;
     }
 
     .hero-full-overlay {
-        background: linear-gradient(0deg,
-            #111111 0%,
-            rgba(17, 17, 17, 0.85) 45%,
-            rgba(17, 17, 17, 0.2) 100%);
+        display:none;
     }
+    .hero-full .hero-mobile-photo { display:block; width:100%; height:auto; }
+    .hero-full .hero-full-content { padding-top:32px; }
+    .hero-full .hero-full-content.animate-fade-up { opacity:1; transform:none; }
 }
 
 .btn-pill {
@@ -331,6 +335,16 @@
     z-index: 1;
 }
 .cta-content { position: relative; z-index: 2; }
+/* En teléfonos la foto conserva sus proporciones y el texto va debajo. */
+@media (max-width:768px) {
+    .final-cta { padding:0 0 44px; background:#111; background-attachment:scroll; }
+    .final-cta .cta-overlay { display:none; }
+    .final-cta .cta-content { padding-top:32px; }
+    .final-cta .subtitle { color:#e3bd87; }
+    .final-cta .cta-mobile-photo { display:block; width:100%; height:auto; }
+    .final-cta .btn-whatsapp { max-width:100%; padding:16px 20px !important; font-size:14px !important; }
+}
+@media (min-width:769px) { .final-cta .cta-mobile-photo { display:none; } }
 .final-cta h2 { font-family: var(--font-heading); font-size: clamp(32px, 4vw, 48px); color: var(--white); margin: 20px auto 40px; max-width: 600px; }
 
 /* ================= MEJORA ESTÉTICA PARA EL VIDEO ================= */
