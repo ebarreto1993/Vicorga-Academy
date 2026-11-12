@@ -428,21 +428,36 @@ header {
     padding: 140px 0 100px;
     background: linear-gradient(135deg, #111111 0%, #1a1611 50%, #111111 100%);
     overflow: hidden;
+    clip-path: inset(0);
+    isolation: isolate;
+}
+
+.course-hero.course-hero-belleza::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url('../assets/images/belleza2.jpg') center 30% / cover no-repeat;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .hero-texture {
     position: absolute;
     inset: 0;
-    background-image: 
-        radial-gradient(circle at 15% 20%, rgba(198,156,109,0.25) 0%, transparent 40%),
-        radial-gradient(circle at 85% 80%, rgba(198,156,109,0.15) 0%, transparent 45%),
-        repeating-linear-gradient(45deg, rgba(198,156,109,0.03) 0px, rgba(198,156,109,0.03) 2px, transparent 2px, transparent 12px);
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(198,156,109,.25) 0%, transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(198,156,109,.15) 0%, transparent 45%),
+        repeating-linear-gradient(45deg, rgba(198,156,109,.03) 0px, rgba(198,156,109,.03) 2px, transparent 2px, transparent 12px);
+    z-index: 1;
     pointer-events: none;
 }
 
 .course-hero-content {
     position: relative;
     z-index: 2;
+}
+.course-hero-belleza .hero-texture {
+    background: linear-gradient(90deg, rgba(17,17,17,.9) 0%, rgba(17,17,17,.6) 50%, rgba(17,17,17,.35) 100%);
 }
 
 .hero-badge {

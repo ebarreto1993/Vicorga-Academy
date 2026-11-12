@@ -31,6 +31,7 @@ if (!carreraData) {
 document.addEventListener('DOMContentLoaded', function() {
     
     // Actualizar hero
+    document.querySelector('.course-hero')?.classList.toggle('course-hero-belleza', carreraParam === 'maestria-belleza');
     const h1 = document.querySelector('.course-hero h1');
     if (h1) {
         const palabras = carreraData.nombre.split(' ');

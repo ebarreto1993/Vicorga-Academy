@@ -4,7 +4,7 @@ const carreras = {
         "nombre": "Maestra en Belleza",
         "descripcion": "Carrera de Maestra en Belleza del centro de formación artesanal. Formación integral con 10 módulos especializados para desarrollar tus habilidades profesionales. Duración: 1 año.",
         "duracion": "1 año (12 meses)",
-        "videoId": "dummyId001",
+        "videoId": "67gy52tNyzg",
         "modulos": [
             {
                 "numero": "01",
