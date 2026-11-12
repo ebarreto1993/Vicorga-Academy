@@ -319,7 +319,7 @@
 .final-cta {
     position: relative;
     padding: 120px 0;
-    background: linear-gradient(135deg, #111111 0%, #1a1611 50%, #111111 100%);
+    background: #C69C6D;
     background-attachment: scroll;
     text-align: center;
 }
@@ -333,9 +333,9 @@
     z-index: 1;
 }
 .cta-content { position: relative; z-index: 2; }
-.final-cta h2 { font-family: var(--font-heading); font-size: clamp(32px, 4vw, 48px); color: #fffaf0; margin: 20px auto 40px; max-width: 600px; }
-.final-cta .subtitle { color:#fffaf0; font-size:14px; font-weight:600; letter-spacing:.12em; }
-.final-cta .cta-description { color:#fffaf0; font-size:16px; max-width:500px; margin:0 auto 40px; line-height:1.7; }
+.final-cta h2 { font-family: var(--font-heading); font-size: clamp(32px, 4vw, 48px); color: #21180f; margin: 20px auto 40px; max-width: 600px; }
+.final-cta .subtitle { color:#352619; font-size:14px; font-weight:600; letter-spacing:.12em; }
+.final-cta .cta-description { color:#352619; font-size:16px; max-width:500px; margin:0 auto 40px; line-height:1.7; }
 @media (max-width:768px) { .final-cta { padding:72px 0; } }
 
 /* ================= MEJORA ESTÉTICA PARA EL VIDEO ================= */
