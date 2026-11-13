@@ -8,12 +8,12 @@
 .beauty-module-toggle { color:#e6bd82; font-size:30px; line-height:1; }
 .beauty-module[open] .beauty-module-toggle { transform:rotate(45deg); }
 .beauty-module[open] summary { border-bottom:1px solid #665039; background:#292118; }
-.beauty-module-body { position:relative; isolation:isolate; min-height:360px; }
-.beauty-module-body>img { position:absolute; inset:0 0 0 auto; width:42%; height:100%; object-fit:contain; object-position:center center; z-index:-2; }
-.beauty-module-body::before { content:''; position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg,#100e0b 0%,#100e0b 55%,rgba(12,10,8,.3) 70%,rgba(12,10,8,.12) 100%); }
-.beauty-module-content { position:relative; padding:36px; width:62%; }
+.beauty-module-body { position:relative; isolation:isolate; min-height:380px; background:#100e0b; }
+.beauty-module-body>img { position:absolute; inset:0 0 0 auto; width:44%; height:100%; object-fit:cover; object-position:center top; z-index:-2; -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 45%,#000 100%); mask-image:linear-gradient(to right,transparent 0%,#000 45%,#000 100%); }
+.beauty-module-body::before { content:''; position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg,#100e0b 0%,#100e0b 54%,rgba(16,14,11,.85) 58%,rgba(16,14,11,.12) 76%,rgba(16,14,11,.06) 100%); }
+.beauty-module-content { position:relative; padding:36px 40px; width:60%; }
 .beauty-module-label { margin:0 0 24px; color:#edc995; font-size:14px; font-weight:600; }
-.beauty-module-content ul { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px 28px; list-style:none; padding:0; margin:0; }
+.beauty-module-content ul { display:grid; grid-template-columns:1fr; gap:12px; list-style:none; padding:0; margin:0; }
 .beauty-module-content li { position:relative; padding-left:18px; color:#fff8ed; font-size:16px; line-height:1.6; }
 .beauty-module-content li::before { content:'•'; position:absolute; left:0; color:#edc995; }
 @media(max-width:768px) {
@@ -22,7 +22,7 @@
     .beauty-module-name { font-size:20px; }
     .beauty-module-content { width:100%; padding:28px 20px; }
     .beauty-module-content ul { grid-template-columns:1fr; gap:14px; }
-    .beauty-module-body>img { inset:0; width:100%; object-fit:contain; object-position:center center; }
+    .beauty-module-body>img { inset:0; width:100%; object-fit:cover; object-position:center top; -webkit-mask-image:none; mask-image:none; }
     .beauty-module-body::before { background:rgba(12,10,8,.84); }
 }
 /* ================= HEADER (curso.html) ================= */
