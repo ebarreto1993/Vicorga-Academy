@@ -422,7 +422,7 @@ header {
     padding: 40px;
     border-radius: 12px;
     border: 2px solid rgba(198,156,109,0.2);
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
 }
 .pricing-item {
@@ -433,10 +433,10 @@ header {
     border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 .pricing-item:last-child { border-bottom: none; }
-.pricing-label { font-weight: 600; color: var(--dark-bg); }
+.pricing-label { font-size: 17px; font-weight: 600; color: var(--dark-bg); }
 .pricing-value {
     font-family: var(--font-heading);
-    font-size: 20px;
+    font-size: 26px;
     color: var(--primary-gold);
     font-weight: 600;
 }
@@ -444,10 +444,13 @@ header {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 2px solid rgba(198,156,109,0.2);
-    font-size: 12px;
+    font-size: 16px;
     color: var(--gray-text);
-    line-height: 1.6;
+    line-height: 1.8;
 }
+.pricing-note strong, .pricing-note em { font-size: inherit; }
+.pricing-note em { font-style: normal; }
+@media (max-width:600px) { .pricing-box { padding:28px 22px; } }
 
 /* ================= HERO (curso.html) ================= */
 .course-hero {
@@ -514,10 +517,7 @@ header {
 
 .course-hero h1 span {
     display: block;
-    background: linear-gradient(90deg, var(--primary-gold), #e8d4b0, var(--primary-gold));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--primary-gold);
     font-style: italic;
 }
 

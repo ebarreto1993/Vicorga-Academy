@@ -109,23 +109,7 @@
     }
 }
 
-.btn-pill {
-    display: inline-block;
-    padding: 14px 36px;
-    border-radius: 50px;
-    background: #C69C6D;
-    color: #111111;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: transform 0.3s ease, background 0.3s ease;
-}
 
-.btn-pill:hover {
-    background: #d8b184;
-    transform: translateY(-2px);
-}
 
 /* En celular el efecto fijo no funciona bien */
 @media (max-width: 768px) {
@@ -140,15 +124,7 @@
 .courses-title { font-family: var(--font-heading); font-size: clamp(32px,3.6vw,52px); font-weight: 400; line-height: 1.15; margin: 0 0 18px; color: #171512; }
 .courses-title em { color: #805526; }
 .courses-description { color: #625b54; font-size: 14px; line-height: 1.7; margin: 0 auto 46px; }
-.course-nav { display: none; }
-.course-icon {
-    display: flex; flex-direction: column; align-items: center; gap: 10px;
-    color: var(--gray-text); cursor: pointer; transition: var(--transition-smooth);
-    font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
-}
-.course-icon .icon { font-size: 28px; filter: grayscale(100%); opacity: 0.6; transition: var(--transition-smooth); }
-.course-icon:hover, .course-icon.active { color: var(--primary-gold); }
-.course-icon:hover .icon, .course-icon.active .icon { filter: grayscale(0%); opacity: 1; transform: scale(1.1); }
+
 
 /* ================= CARRUSEL ================= */
 .carousel-wrapper { position: relative; max-width: 1120px; margin: 0 auto; display: flex; align-items: center; }

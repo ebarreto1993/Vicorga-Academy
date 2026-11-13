@@ -1,31 +1,9 @@
 // Función para llenar horarios (ahora usa los datos dinámicos de carreras)
-function llenarHorarios(nombreCarrera) {
-    const horarioSelect = document.getElementById('horario-hero');
-    horarioSelect.innerHTML = '<option value="">Selecciona el horario</option>';
-    
-    // Buscar la carrera en el objeto carreras y usar sus horarios
-    for (const key in carreras) {
-        if (carreras[key].nombre === nombreCarrera) {
-            carreras[key].horarios.forEach(horario => {
-                const option = document.createElement('option');
-                option.value = horario;
-                option.textContent = horario;
-                horarioSelect.appendChild(option);
-            });
-            break;
-        }
-    }
-}
-
 // Obtener parámetro de URL
 const params = new URLSearchParams(window.location.search);
-const carreraParam = params.get('carrera') || 'maestria-belleza';
+const requestedCarrera = params.get('carrera') || 'maestria-belleza';
+const carreraParam = Object.hasOwn(carreras, requestedCarrera) ? requestedCarrera : 'maestria-belleza';
 const carreraData = carreras[carreraParam];
-
-// Si la carrera no existe, redirigir
-if (!carreraData) {
-    window.location.href = 'curso.html?carrera=maestria-belleza';
-}
 
 // Esperar a que el DOM esté listo
 document.addEventListener('DOMContentLoaded', function() {
@@ -48,8 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Actualizar video
     const iframe = document.querySelector('.video-container iframe');
-    if (iframe) {
+    if (iframe && carreraData.videoId && !carreraData.videoId.startsWith('dummyId')) {
         iframe.src = `https://www.youtube.com/embed/${carreraData.videoId}`;
+    } else if (iframe) {
+        document.querySelector('.video-section').hidden = true;
+        document.querySelector('a[href="#video"]')?.setAttribute('hidden', '');
     }
     
         // Actualizar módulos
@@ -232,9 +213,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            const mensaje = `Hola, me interesa inscribirme:%0A%0ANombre: ${nombre} ${apellido}%0ADirección: ${direccion}%0ACarrera: ${carrera}%0AHorario: ${horario}`;
+            const mensaje = encodeURIComponent(`Hola, me interesa inscribirme:\n\nNombre: ${nombre} ${apellido}\nDirección: ${direccion}\nCarrera: ${carrera}\nHorario: ${horario}`);
             
-            window.open(`https://wa.me/593989330599?text=${mensaje}`, '_blank');
+            window.open(`https://wa.me/593989330599?text=${mensaje}`, '_blank', 'noopener');
         });
     }
 });

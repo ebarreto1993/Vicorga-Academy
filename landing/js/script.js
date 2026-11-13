@@ -62,7 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const track = document.getElementById('carousel-track');
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
-    const courseIcons = document.querySelectorAll('.course-icon');
     const cards = document.querySelectorAll('.course-card');
     const indicatorsContainer = document.querySelector('.carousel-indicators');
 
@@ -104,16 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // 4.3 Clic en los Íconos Superiores (Sincronización)
-        courseIcons.forEach((icon, index) => {
-            icon.addEventListener('click', () => {
-                if (cards[index]) {
-                    const targetPosition = cards[index].offsetLeft - track.offsetLeft;
-                    track.scrollTo({ left: targetPosition, behavior: 'smooth' });
-                }
-            });
-        });
-
         // 4.4 Movimiento Automático (Auto-play)
         const startAutoPlay = () => {
             return setInterval(() => {
@@ -141,10 +130,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const cardLeft = card.offsetLeft - track.offsetLeft;
                 // Si la tarjeta está cerca del borde izquierdo del contenedor visible
                 if (Math.abs(scrollPos - cardLeft) < card.offsetWidth / 2) {
-                    
-                    // Actualizar íconos
-                    courseIcons.forEach(i => i.classList.remove('active'));
-                    if (courseIcons[index]) courseIcons[index].classList.add('active');
                     
                     // Actualizar puntitos
                     dots.forEach(d => d.classList.remove('active'));

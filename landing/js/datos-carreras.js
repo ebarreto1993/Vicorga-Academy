@@ -66,7 +66,7 @@ const carreras = {
                 ]
             },
             {
-                "numero": "06",
+                "numero": "06 y 07",
                 "nombre": "Peinados",
                 "icono": "fas fa-wind",
                 "imagen": "https://images.pexels.com/photos/3966514/pexels-photo-3966514.jpeg?w=600",
@@ -78,7 +78,7 @@ const carreras = {
                 ]
             },
             {
-                "numero": "07",
+                "numero": "08",
                 "nombre": "Cortes de Dama",
                 "icono": "fas fa-scissors",
                 "imagen": "https://images.pexels.com/photos/3962275/pexels-photo-3962275.jpeg?w=600",
@@ -90,7 +90,7 @@ const carreras = {
                 ]
             },
             {
-                "numero": "08",
+                "numero": "09",
                 "nombre": "Tratamientos Capilares",
                 "icono": "fas fa-wand-magic-sparkles",
                 "imagen": "https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?w=600",
@@ -101,18 +101,7 @@ const carreras = {
                     "Tricología capilar"
                 ]
             },
-            {
-                "numero": "09",
-                "nombre": "Tratamientos Faciales",
-                "icono": "fas fa-face-smile",
-                "imagen": "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?w=600",
-                "temas": [
-                    "Marco teórico",
-                    "Exfoliación avanzada",
-                    "Hidratación profunda",
-                    "Fototerapia"
-                ]
-            },
+            
             {
                 "numero": "10 y 11",
                 "nombre": "Barbería",
