@@ -57,6 +57,52 @@ document.addEventListener('DOMContentLoaded', function() {
     if (modulosList) {
         modulosList.innerHTML = '';
         carreraData.modulos.forEach(modulo => {
+            if (carreraParam === 'maestria-belleza') {
+                const imagenes = {
+                    'Manicura y Pedicura': 'modulo_uñas.jpeg',
+                    'Faciales / Skin Care': 'modulo_tratamiento_facial.jpeg',
+                    'Maquillaje': 'modulo_maquillaje.jpeg',
+                    'Lashes and Brows': 'modulo_lashista.jpeg',
+                    'Peinados': 'modulo_peinados.jpeg',
+                    'Cortes de Dama': 'modulo_cortes_dama.jpeg',
+                    'Tratamientos Capilares': 'modulo_tratamiento_capilar.jpeg',
+                    'Tratamientos Faciales': 'modulo_tratamiento_facial.jpeg',
+                    'Barbería': 'modulo_barberia.jpeg',
+                    'Colorimetría': 'modulo_color.jpeg'
+                };
+                const item = document.createElement('details');
+                item.className = 'beauty-module';
+                item.name = 'pensum-belleza';
+                const summary = document.createElement('summary');
+                summary.innerHTML = `<span class="beauty-module-number">${modulo.numero}</span><span class="beauty-module-name">${modulo.nombre}</span><span class="beauty-module-toggle" aria-hidden="true">+</span>`;
+                const body = document.createElement('div');
+                body.className = 'beauty-module-body';
+                const photo = document.createElement('img');
+                photo.src = `assets/images/modulos_belleza/${imagenes[modulo.nombre]}`;
+                photo.alt = '';
+                photo.loading = 'lazy';
+                const content = document.createElement('div');
+                content.className = 'beauty-module-content';
+                const label = document.createElement('p');
+                label.className = 'beauty-module-label';
+                label.textContent = 'Contenido del módulo';
+                const list = document.createElement('ul');
+                modulo.temas.forEach(tema => {
+                    const li = document.createElement('li');
+                    li.textContent = tema;
+                    list.appendChild(li);
+                });
+                content.append(label, list);
+                body.append(photo, content);
+                item.append(summary, body);
+                item.addEventListener('toggle', () => {
+                    if (item.open) modulosList.querySelectorAll('details').forEach(other => {
+                        if (other !== item) other.open = false;
+                    });
+                });
+                modulosList.appendChild(item);
+                return;
+            }
             const row = document.createElement('div');
             row.className = 'modulo-row animate-slide-up';
             row.innerHTML = `

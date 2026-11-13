@@ -42,8 +42,8 @@ const carreras = {
                 ]
             },
             {
-                "numero": "03",
-                "nombre": "Maquillaje II",
+                "numero": "04",
+                "nombre": "Maquillaje",
                 "icono": "fas fa-eye",
                 "imagen": "https://images.pexels.com/photos/2688992/pexels-photo-2688992.jpeg?w=600",
                 "temas": [
@@ -54,7 +54,7 @@ const carreras = {
                 ]
             },
             {
-                "numero": "04",
+                "numero": "05",
                 "nombre": "Lashes and Brows",
                 "icono": "fas fa-feather",
                 "imagen": "https://images.pexels.com/photos/5128220/pexels-photo-5128220.jpeg?w=600",
@@ -66,7 +66,7 @@ const carreras = {
                 ]
             },
             {
-                "numero": "05",
+                "numero": "06",
                 "nombre": "Peinados",
                 "icono": "fas fa-wind",
                 "imagen": "https://images.pexels.com/photos/3966514/pexels-photo-3966514.jpeg?w=600",
@@ -78,7 +78,7 @@ const carreras = {
                 ]
             },
             {
-                "numero": "06",
+                "numero": "07",
                 "nombre": "Cortes de Dama",
                 "icono": "fas fa-scissors",
                 "imagen": "https://images.pexels.com/photos/3962275/pexels-photo-3962275.jpeg?w=600",
@@ -90,7 +90,7 @@ const carreras = {
                 ]
             },
             {
-                "numero": "07",
+                "numero": "08",
                 "nombre": "Tratamientos Capilares",
                 "icono": "fas fa-wand-magic-sparkles",
                 "imagen": "https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?w=600",
@@ -102,7 +102,7 @@ const carreras = {
                 ]
             },
             {
-                "numero": "08",
+                "numero": "09",
                 "nombre": "Tratamientos Faciales",
                 "icono": "fas fa-face-smile",
                 "imagen": "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?w=600",
@@ -114,7 +114,7 @@ const carreras = {
                 ]
             },
             {
-                "numero": "09",
+                "numero": "10 y 11",
                 "nombre": "Barbería",
                 "icono": "fas fa-razor",
                 "imagen": "https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?w=600",
@@ -126,7 +126,7 @@ const carreras = {
                 ]
             },
             {
-                "numero": "10",
+                "numero": "12",
                 "nombre": "Colorimetría",
                 "icono": "fas fa-palette",
                 "imagen": "https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?w=600",

@@ -1,3 +1,30 @@
+/* Pénsum desplegable de Belleza */
+.beauty-module { border:1px solid #665039; border-radius:12px; overflow:hidden; background:#1a1713; color:#fff8ed; }
+.beauty-module summary { display:flex; align-items:center; gap:24px; padding:24px; cursor:pointer; list-style:none; min-height:90px; }
+.beauty-module summary::-webkit-details-marker { display:none; }
+.beauty-module summary:focus-visible { outline:3px solid #e6bd82; outline-offset:-4px; }
+.beauty-module-number { min-width:85px; color:#e6bd82; font:500 28px var(--font-heading); }
+.beauty-module-name { flex:1; font:500 24px var(--font-heading); }
+.beauty-module-toggle { color:#e6bd82; font-size:30px; line-height:1; }
+.beauty-module[open] .beauty-module-toggle { transform:rotate(45deg); }
+.beauty-module[open] summary { border-bottom:1px solid #665039; background:#292118; }
+.beauty-module-body { position:relative; isolation:isolate; min-height:360px; }
+.beauty-module-body>img { position:absolute; inset:0 0 0 auto; width:42%; height:100%; object-fit:contain; object-position:center center; z-index:-2; }
+.beauty-module-body::before { content:''; position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg,#100e0b 0%,#100e0b 55%,rgba(12,10,8,.3) 70%,rgba(12,10,8,.12) 100%); }
+.beauty-module-content { position:relative; padding:36px; width:62%; }
+.beauty-module-label { margin:0 0 24px; color:#edc995; font-size:14px; font-weight:600; }
+.beauty-module-content ul { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px 28px; list-style:none; padding:0; margin:0; }
+.beauty-module-content li { position:relative; padding-left:18px; color:#fff8ed; font-size:16px; line-height:1.6; }
+.beauty-module-content li::before { content:'•'; position:absolute; left:0; color:#edc995; }
+@media(max-width:768px) {
+    .beauty-module summary { gap:12px; padding:20px 16px; }
+    .beauty-module-number { min-width:64px; font-size:22px; }
+    .beauty-module-name { font-size:20px; }
+    .beauty-module-content { width:100%; padding:28px 20px; }
+    .beauty-module-content ul { grid-template-columns:1fr; gap:14px; }
+    .beauty-module-body>img { inset:0; width:100%; object-fit:contain; object-position:center center; }
+    .beauty-module-body::before { background:rgba(12,10,8,.84); }
+}
 /* ================= HEADER (curso.html) ================= */
 header {
     background: var(--white);
