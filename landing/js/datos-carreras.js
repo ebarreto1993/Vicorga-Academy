@@ -2,32 +2,43 @@
 const carreras = {
     "maestria-belleza": {
         "nombre": "Maestra en Belleza",
-        "descripcion": "Carrera de Maestra en Belleza del centro de formación artesanal. Formación integral con 10 módulos especializados para desarrollar tus habilidades profesionales. Duración: 1 año.",
+        "descripcion": "Carrera de Maestra en Belleza del centro de formación artesanal particular Vicorga Academy. Formación integral con 12 módulos especializados para desarrollar tus habilidades profesionales. Duración: 1 año.",
         "duracion": "1 año (12 meses)",
-        "videoId": "67gy52tNyzg",
+        "videoId": "sV3_Bk5__3A",
         "modulos": [
             {
-                "numero": "01",
+                "numero": "01 y 02",
                 "nombre": "Manicura y Pedicura",
                 "icono": "fas fa-hand-sparkles",
                 "imagen": "https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?w=600",
                 "temas": [
                     "Manicura Rusa",
-                    "Acrygel y Gel",
-                    "Diseños 3D",
-                    "Acrílico full cover"
+                    "Esmaltado Perfecto",
+                    "Nivelación con Rubber",
+                    "Tecnica de soft Gel",
+                    "Sistema Dual",
+                    "Quimica Basica del Acrílico",
+                    "Full cover en Acrílico",
+                    "Baby Boomer",
+                    "Not polish",
+                    "Baby glitter y base shine",
+                    "Técnicas de 3d (flores y rosas)",
                 ]
             },
             {
-                "numero": "02",
-                "nombre": "Maquillaje I - Skin Care",
+                "numero": "03",
+                "nombre": "Faciales / Skin Care",
                 "icono": "fas fa-spa",
                 "imagen": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?w=600",
                 "temas": [
-                    "Cuidado de la piel",
-                    "Biotipos cutáneos",
-                    "Hidratación avanzada",
-                    "Corriente galvánica"
+                    "Célula /Piel",
+                    "Lesiones elementales",
+                    "Biotipos y fototipos cutáneos",
+                    "conceptos basicos de hidratación",
+                    "Productos y principios activos",
+                    "Aparatologia basica",
+                    "Limpiezas faciales (practicas en pacientes reales)",
+                    "Hidratación con corriente galvánica (Practicas en pacientes reales)",
                 ]
             },
             {
