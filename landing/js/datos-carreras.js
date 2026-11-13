@@ -15,9 +15,9 @@ const carreras = {
                     "Manicura Rusa",
                     "Esmaltado Perfecto",
                     "Nivelación con Rubber",
-                    "Tecnica de soft Gel",
+                    "Técnica de soft Gel",
                     "Sistema Dual",
-                    "Quimica Basica del Acrílico",
+                    "Química Básica del Acrílico",
                     "Full cover en Acrílico",
                     "Baby Boomer",
                     "Not polish",
@@ -31,13 +31,13 @@ const carreras = {
                 "icono": "fas fa-spa",
                 "imagen": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?w=600",
                 "temas": [
-                    "Célula /Piel",
+                    "Célula / Piel",
                     "Lesiones elementales",
                     "Biotipos y fototipos cutáneos",
-                    "conceptos basicos de hidratación",
+                    "conceptos básicos de hidratación",
                     "Productos y principios activos",
-                    "Aparatologia basica",
-                    "Limpiezas faciales (practicas en pacientes reales)",
+                    "Aparatologia básica",
+                    "Limpiezas faciales (prácticas en pacientes reales)",
                     "Hidratación con corriente galvánica (Practicas en pacientes reales)",
                 ]
             },
@@ -47,10 +47,14 @@ const carreras = {
                 "icono": "fas fa-eye",
                 "imagen": "https://images.pexels.com/photos/2688992/pexels-photo-2688992.jpeg?w=600",
                 "temas": [
-                    "Diseño de cejas",
+                    "Diseño de cejas - visagismo",
+                    "Tipos de depilación",
+                    "Preparación y limpieza de piel",
+                    "Piel perfecta",
+                    "Laboratorio de productos y herramientas",
+                    "Maquillaje de día y noche",
                     "Maquillaje de novia",
-                    "Maquillaje artístico",
-                    "Aplicación de pestañas"
+                    "Maquillaje artístico"
                 ]
             },
             {
@@ -59,10 +63,13 @@ const carreras = {
                 "icono": "fas fa-feather",
                 "imagen": "https://images.pexels.com/photos/5128220/pexels-photo-5128220.jpeg?w=600",
                 "temas": [
-                    "Lifting y tinturado",
-                    "Laminado de pestañas",
-                    "Técnica clásica",
-                    "Teoría de pestañas"
+                    "Visagismo",
+                    "Depilación con hilo",
+                    "Laminado de cejas",
+                    "Pigmentación de cejas con henna y tintes",
+                    "Lifting de pestañas coreano",
+                    "Teoría de curvaturas, grosor y tamaños para colocación de pestañas pelo a pelo",
+                    "prácticas en maniquí y modelos reales",
                 ]
             },
             {
@@ -71,10 +78,23 @@ const carreras = {
                 "icono": "fas fa-wind",
                 "imagen": "https://images.pexels.com/photos/3966514/pexels-photo-3966514.jpeg?w=600",
                 "temas": [
-                    "Tipos de trenzas",
-                    "Peinados para eventos",
+                    "Técnicas de cepillado y planchado de cabello",
+                    "Manejo de herramientas y productos",
+                    "Trenzas espiga",
+                    "Trenzas de 3 cabos",
+                    "Trenzas 4 cabos",
+                    "Trenzas de cascada",
+                    "Coletas altas y bajas ",
+                    "Peinados de niñas",
+                    "Tipos de ondas",
+                    "Peinados semirrecogido",
+                    "Peinado vintage",
+                    "Peinados de gala ",
+                    "Recogidos pulidos ",
+                    "Peinado recogido alto",
                     "Peinado de novia",
-                    "Ondas y volúmenes"
+                    "Peinado de xv años",
+                    "Fijación, texturización y acabados profesionales.",
                 ]
             },
             {
@@ -84,9 +104,16 @@ const carreras = {
                 "imagen": "https://images.pexels.com/photos/3962275/pexels-photo-3962275.jpeg?w=600",
                 "temas": [
                     "Corte sólido 0° y 45°",
-                    "Cortes semirredondo",
-                    "Melena Bob",
-                    "Degrafilado con navaja"
+                    "Cerquillos, flequillos",
+                    "Cortes semiredondo",
+                    "Corte en v",
+                    "Elevación 90° y 180°",
+                    "Corte pluma",
+                    "Melena",
+                    "Bob",
+                    "Entresacado y degrafilado con navaja",
+                    "Corte pixie",
+                    "corte de señora"
                 ]
             },
             {
@@ -95,10 +122,13 @@ const carreras = {
                 "icono": "fas fa-wand-magic-sparkles",
                 "imagen": "https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?w=600",
                 "temas": [
+                    "Marco teórico de tratamientos exfoliación del cabello ",
                     "Tratamiento de células madre",
-                    "Botox capilar",
-                    "Queratina",
-                    "Tricología capilar"
+                    "Tratamiento de repolarización",
+                    "Tratamiento botox",
+                    "Tricología capilar",
+                    "Teoría de permacología practica de permanente (montaje de bigudí) ",
+                    "Practica de porcelanización (queratina)"
                 ]
             },
             
@@ -109,8 +139,17 @@ const carreras = {
                 "imagen": "https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?w=600",
                 "temas": [
                     "Historia de la barbería",
-                    "Taper fade",
+                    "Manejo y uso de las herramientas",
+                    "Corte normal alza #2",
+                    "Corte alza #1",
+                    "Corte alza #0.5",
+                    "Corte mid-fade #0",
+                    "Skin fade/ navaja",
+                    "Corte comb over",
+                    "Teoría del taper fade",
+                    "Blow out – taper fade",
                     "Corte mohicano",
+                    "Corte a tijera",
                     "Ritual de la barba"
                 ]
             },
@@ -120,21 +159,22 @@ const carreras = {
                 "icono": "fas fa-palette",
                 "imagen": "https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?w=600",
                 "temas": [
-                    "Teoría del color",
-                    "Tabla del 12",
+                    "Marco teórico de la colorimetría",
+                    "Formulaciones y leyes del color",
+                    "Creación de colores tabla del 12",
                     "Cubrimiento de canas",
-                    "Balayage y rayitos"
+                    "Tono sobre tono",
+                    "Rayitos y marmoleado",
+                    "Balayage"
                 ]
             }
         ],
         "matricula": 80,
         "mensualidad": 180,
         "incluye": [
-            "Chaqueta de la academia",
-            "Guía de estudio",
-            "Mochila",
-            "Materiales para clases",
-            "Certificado avalado"
+            "Uniforme de la academia",
+            "Mochila de la academia",
+            "30% de los materiales para clases"
         ],
         "horarios": [
             "Martes y Jueves 15 de octubre 9:00 AM - 4:00 PM",
@@ -200,10 +240,9 @@ const carreras = {
         "matricula": 80,
         "mensualidad": 180,
         "incluye": [
-            "Máquina para prácticas en clase",
-            "Chaqueta uniforme",
-            "Mochila de la academia",
-            "Certificación con aval del ministerio de trabajo (valor adicional)"
+            "Máquina de corte profesional",
+            "uniforme de la academia",
+            "Mochila de la academia"
         ],
         "horarios": [
             "Sábados 29 de agosto 9:00 AM - 4:00 PM",
@@ -280,9 +319,8 @@ const carreras = {
         "matricula": 80,
         "mensualidad": 180,
         "incluye": [
-            "Drill y lámparas para prácticas",
-            "Material para prácticas en clase",
-            "Uniforme completo",
+            "30% de los materiales para clases",
+            "Uniforme de la academia",
             "Mochila de la academia"
         ],
         "horarios": [
@@ -362,7 +400,7 @@ const carreras = {
         "mensualidad": 180,
         "incluye": [
             "30% de material para prácticas en clases por módulo",
-            "Uniforme completo",
+            "Uniforme de la academia",
             "Mochila de la academia"
         ],
         "horarios": [

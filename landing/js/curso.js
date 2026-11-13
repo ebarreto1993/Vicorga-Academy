@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <strong>⚠️ NOTAS IMPORTANTES:</strong><br>
                 • Examen final obligatorio para recibir tu certificación<br>
-                • Puedes reservar tu cupo con $20 e ir haciendo abonos poco a poco<br>
+                • Puedes reservar tu cupo con $20<br>
                 • La matrícula y pensión deben estar pagadas hasta el día de inicio<br>
                 <strong>• Los valores cancelados o abonados NO son reembolsables bajo ningún motivo.</strong>
             </div>
