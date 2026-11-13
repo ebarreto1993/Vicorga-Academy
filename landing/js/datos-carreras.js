@@ -329,8 +329,8 @@ const carreras = {
         ]
     },
     "cosmetologia": {
-        "nombre": "Cosmetología",
-        "descripcion": "Carrera de Cosmetología del centro de formación artesanal. Formación en ciencias cosméticas, cuidado de la piel y tratamientos estéticos. Duración: 1 año.",
+        "nombre": "Cosmiatría",
+        "descripcion": "Carrera de Cosmiatría del centro de formación artesanal particular Vicorga Academy. Formación en ciencias cosméticas, cuidado de la piel y tratamientos estéticos. Duración: 1 año.",
         "duracion": "1 año (12 meses)",
         "videoId": "dummyId002",
         "modulos": [
