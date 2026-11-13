@@ -332,7 +332,7 @@ const carreras = {
         "nombre": "Cosmiatría",
         "descripcion": "Carrera de Cosmiatría del centro de formación artesanal particular Vicorga Academy. Formación en ciencias cosméticas, cuidado de la piel y tratamientos estéticos. Duración: 1 año.",
         "duracion": "1 año (12 meses)",
-        "videoId": "dummyId002",
+        "videoId": "6HDYJQtG69Y",
         "modulos": [
             {
                 "numero": "1",
@@ -384,11 +384,11 @@ const carreras = {
                 "imagen": "assets/images/modulos_cosmiatria/m4.jpeg",
                 "temas": [
                     "Fundamentos básicos de la Renovación Celular",
-                    "Técnicas de Expoliación, físicas, químicas y mecánicas.",
+                    "Técnicas de Exfoliación, físicas, químicas y mecánicas.",
                     "Uso de Alfa-hidroxiácidos",
                     "Uso de los Beta-hidroxiácidos",
                     "Contraindicaciones, ventajas, y factores del procedimiento",
-                    "Protocolo",
+                    "Protocolos",
                     "Práctica en pacientes."
                 ]
             },
@@ -441,7 +441,7 @@ const carreras = {
                     "Uso y manejo de ácidos cosmiátricos",
                     "Manejo de Cocteles Contraindicaciones",
                     "Técnicas de Aplicación Combinadas",
-                    "Trabajo de ácidos en sinergia",
+                    "Sinergia de ácidos dermatocosmeticos",
                     "Peeling íntimo",
                     "Técnica en electrocauterio",
                     "Manejo, uso y tratamientos con dermaplaning",
@@ -489,7 +489,7 @@ const carreras = {
                     "Acción de la mega dosis vitamina C",
                     "MESOTERAPIA FACIAL",
                     "Principios activos del uso facial",
-                    "Tratamientos de anti edad",
+                    "Tratamientos de antiage",
                     "Tratamientos antiacné",
                     "Tratamientos reafirmantes",
                     "Tratamientos despigmentantes",
