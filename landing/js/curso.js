@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Actualizar hero
     document.querySelector('.course-hero')?.classList.toggle('course-hero-belleza', carreraParam === 'maestria-belleza');
+    document.querySelector('.course-hero')?.classList.toggle('course-hero-cosmetologia', carreraParam === 'cosmetologia');
     const h1 = document.querySelector('.course-hero h1');
     if (h1) {
         const palabras = carreraData.nombre.split(' ');
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (modulosList) {
         modulosList.innerHTML = '';
         carreraData.modulos.forEach(modulo => {
-            if (carreraParam === 'maestria-belleza') {
+            if (carreraParam === 'maestria-belleza' || carreraParam === 'cosmetologia') {
                 const imagenes = {
                     'Manicura y Pedicura': 'modulo_uñas.jpeg',
                     'Faciales / Skin Care': 'modulo_tratamiento_facial.jpeg',
@@ -53,13 +54,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 };
                 const item = document.createElement('details');
                 item.className = 'beauty-module';
-                item.name = 'pensum-belleza';
+                item.name = `pensum-${carreraParam}`;
                 const summary = document.createElement('summary');
                 summary.innerHTML = `<span class="beauty-module-number">${modulo.numero}</span><span class="beauty-module-name">${modulo.nombre}</span><span class="beauty-module-toggle" aria-hidden="true">+</span>`;
                 const body = document.createElement('div');
                 body.className = 'beauty-module-body';
                 const photo = document.createElement('img');
-                photo.src = `assets/images/modulos_belleza/${imagenes[modulo.nombre]}`;
+                photo.src = carreraParam === 'cosmetologia' ? modulo.imagen : `assets/images/modulos_belleza/${imagenes[modulo.nombre]}`;
                 photo.alt = '';
                 photo.loading = 'lazy';
                 const content = document.createElement('div');

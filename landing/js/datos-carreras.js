@@ -1,4 +1,4 @@
-// Cuatro carreras del centro de formación artesanal
+// Carreras del centro de formación artesanal
 const carreras = {
     "maestria-belleza": {
         "nombre": "Maestra en Belleza",
@@ -22,7 +22,7 @@ const carreras = {
                     "Baby Boomer",
                     "Not polish",
                     "Baby glitter y base shine",
-                    "Técnicas de 3d (flores y rosas)",
+                    "Técnicas de 3d (flores y rosas)"
                 ]
             },
             {
@@ -38,7 +38,7 @@ const carreras = {
                     "Productos y principios activos",
                     "Aparatologia básica",
                     "Limpiezas faciales (prácticas en pacientes reales)",
-                    "Hidratación con corriente galvánica (Practicas en pacientes reales)",
+                    "Hidratación con corriente galvánica (Practicas en pacientes reales)"
                 ]
             },
             {
@@ -69,7 +69,7 @@ const carreras = {
                     "Pigmentación de cejas con henna y tintes",
                     "Lifting de pestañas coreano",
                     "Teoría de curvaturas, grosor y tamaños para colocación de pestañas pelo a pelo",
-                    "prácticas en maniquí y modelos reales",
+                    "prácticas en maniquí y modelos reales"
                 ]
             },
             {
@@ -94,7 +94,7 @@ const carreras = {
                     "Peinado recogido alto",
                     "Peinado de novia",
                     "Peinado de xv años",
-                    "Fijación, texturización y acabados profesionales.",
+                    "Fijación, texturización y acabados profesionales."
                 ]
             },
             {
@@ -131,7 +131,6 @@ const carreras = {
                     "Practica de porcelanización (queratina)"
                 ]
             },
-            
             {
                 "numero": "10 y 11",
                 "nombre": "Barbería",
@@ -336,63 +335,220 @@ const carreras = {
         "videoId": "dummyId002",
         "modulos": [
             {
-                "numero": "01",
-                "nombre": "Fundamentos de Cosmetología",
-                "icono": "fas fa-flask",
-                "imagen": "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?w=600",
+                "numero": "1",
+                "nombre": "Enfoque cosmetológico",
+                "imagen": "assets/images/modulos_cosmiatria/m1.jpeg",
                 "temas": [
-                    "Célula y piel",
-                    "Biotipos cutáneos",
-                    "Lesiones elementales",
-                    "Dermis y epidermis"
+                    "Anatomía y fisiología del tejido tegumentario.",
+                    "Anamnesis – Biotipos y Fototipos.",
+                    "Características visual y táctil de las tipologías cutáneas",
+                    "Lesiones elementales primarias y secundarias",
+                    "Aparatología- Alta Frecuencia-Analizador de piel microscópico- vapor -",
+                    "Ozonoterapia",
+                    "Prácticas de Limpieza Profunda en pacientes",
+                    "Prácticas de Limpieza Profunda en pacientes con paleta ultrasónica"
                 ]
             },
             {
-                "numero": "02",
-                "nombre": "Tratamientos Faciales",
-                "icono": "fas fa-face-smile",
-                "imagen": "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?w=600",
+                "numero": "2",
+                "nombre": "Hidratación",
+                "imagen": "assets/images/modulos_cosmiatria/m2.jpeg",
                 "temas": [
-                    "Higiene facial",
-                    "Exfoliación",
-                    "Hidratación profunda",
-                    "Masaje facial"
+                    "Conceptos básicos de Hidratación y Humectación de la piel",
+                    "Factores desencadenantes de la deshidratación",
+                    "Radicales Libres, apoptosis celular",
+                    "Productos y principios activos hidratantes y humectantes.",
+                    "Corriente Ionizable",
+                    "Prácticas de Limpieza facial Profunda con microdermoabrasión",
+                    "Prácticas de hidratación con pacientes reales"
                 ]
             },
             {
-                "numero": "03",
-                "nombre": "Cosmetología Aplicada",
-                "icono": "fas fa-vial",
-                "imagen": "https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?w=600",
+                "numero": "3",
+                "nombre": "Envejecimiento cutáneo",
+                "imagen": "assets/images/modulos_cosmiatria/m3.jpeg",
                 "temas": [
-                    "Productos cosméticos",
-                    "Fórmulas y principios",
-                    "Manipulación de principios activos",
-                    "Prácticas en pacientes reales"
+                    "Involución de la piel",
+                    "Factores desencadenantes",
+                    "Características de Pieles Involutivas.",
+                    "Estrés Oxidativo",
+                    "Protocolo y controversias de las manifestaciones de la piel.",
+                    "Contraindicaciones y ventajas",
+                    "Radiofrecuencia, monopolar, bipolar y tripolar.",
+                    "Prácticas en pacientes reales para efecto lifting."
                 ]
             },
             {
-                "numero": "04",
-                "nombre": "Cosmiatría",
-                "icono": "fas fa-wand-magic-sparkles",
-                "imagen": "https://images.pexels.com/photos/3945682/pexels-photo-3945682.jpeg?w=600",
+                "numero": "4",
+                "nombre": "Peeling",
+                "imagen": "assets/images/modulos_cosmiatria/m4.jpeg",
                 "temas": [
-                    "Técnicas no invasivas",
-                    "Electroestética",
-                    "Radiofrecuencia",
-                    "Fotoenvejecimiento"
+                    "Fundamentos básicos de la Renovación Celular",
+                    "Técnicas de Expoliación, físicas, químicas y mecánicas.",
+                    "Uso de Alfa-hidroxiácidos",
+                    "Uso de los Beta-hidroxiácidos",
+                    "Contraindicaciones, ventajas, y factores del procedimiento",
+                    "Protocolo",
+                    "Práctica en pacientes."
                 ]
             },
             {
-                "numero": "05",
-                "nombre": "Dermocosmiatría",
-                "icono": "fas fa-microscope",
-                "imagen": "https://images.pexels.com/photos/3807516/pexels-photo-3807516.jpeg?w=600",
+                "numero": "5",
+                "nombre": "Despigmentación facial",
+                "imagen": "assets/images/modulos_cosmiatria/m5.jpeg",
                 "temas": [
-                    "Dermatología básica",
-                    "Patologías de piel",
-                    "Tratamiento de acné",
-                    "Hiperpigmentación"
+                    "Trastornos Pigmentarios",
+                    "Proceso de la Melanogénesis",
+                    "Tipos de Melanina",
+                    "Factores Influyentes en la Pigmentación",
+                    "Discromías por pigmento Melánico",
+                    "Protocolo de Actuación",
+                    "Indicaciones según la Pigmentación",
+                    "Contraindicaciones previo al diagnóstico inicial",
+                    "Práctica en paciente adecuado."
+                ]
+            },
+            {
+                "numero": "6",
+                "nombre": "Acné",
+                "imagen": "assets/images/modulos_cosmiatria/m6.jpg",
+                "temas": [
+                    "Alteraciones de la glándula sebácea.",
+                    "Mecanismo de producción del sebo",
+                    "Unidad Pilosebacea",
+                    "Etimología",
+                    "Clasificación de los grados de ACNÉ",
+                    "Tratamiento específico",
+                    "Protocolo de Actuación",
+                    "Práctica en pacientes con manifestaciones propias de ACNÉ."
+                ]
+            },
+            {
+                "numero": "7",
+                "nombre": "Actualización de peeling y técnicas de aparatología",
+                "imagen": "assets/images/modulos_cosmiatria/m7.jpeg",
+                "temas": [
+                    "Técnica de dermaplaning",
+                    "Manejo, Uso y Tratamientos con Dermaplaning",
+                    "Contraindicaciones y Cuidados posteriores",
+                    "Protocolos combinados",
+                    "Bioestimulacion facial (dermapen)",
+                    "Tratamientos cosmiatricos con Dermapen",
+                    "Contraindicaciones",
+                    "Tratamiento antiage",
+                    "Tratamiento en secuelas post inflamatorias",
+                    "Actualización de peeling químico",
+                    "Uso y manejo de ácidos cosmiátricos",
+                    "Manejo de Cocteles Contraindicaciones",
+                    "Técnicas de Aplicación Combinadas",
+                    "Trabajo de ácidos en sinergia",
+                    "Peeling íntimo",
+                    "Técnica en electrocauterio",
+                    "Manejo, uso y tratamientos con dermaplaning",
+                    "Contraindicaciones y cuidados posteriores",
+                    "Diagnóstico de nevus, acrocordones y quistes de millium",
+                    "Protocolos combinados"
+                ]
+            },
+            {
+                "numero": "8",
+                "nombre": "Corporal electroestetica avanzada",
+                "imagen": "assets/images/modulos_cosmiatria/m8.jpeg",
+                "temas": [
+                    "Introducción a la estética corporal.",
+                    "Aparato locomotor",
+                    "Factores desencadenantes de la Obesidad",
+                    "Definición de Obesidad y Sobrepeso",
+                    "Apertura de canales",
+                    "Drenaje Linfático decubito prono y decubito supino",
+                    "Maniobras de Masaje Reductor",
+                    "Maderoterapia",
+                    "Mecanismo de aparatologías combinadas",
+                    "Modelación de cintura",
+                    "Glúteos",
+                    "Termoterapia",
+                    "Vacumterapia",
+                    "Gimnasia pasiva",
+                    "Cavitación",
+                    "Radiofrecuencia corporal"
+                ]
+            },
+            {
+                "numero": "9",
+                "nombre": "Inyectoterapia - sueroterapia – mesoterapia",
+                "imagen": "assets/images/modulos_cosmiatria/m9.jpeg",
+                "temas": [
+                    "INYECTOLOGIA Y SUEROTERAPIA",
+                    "Infiltración",
+                    "Tipos de Inyecciones y sus Ángulos",
+                    "Bioseguridad",
+                    "Sueroterapia en tratamientos estéticos",
+                    "Técnicas de aplicación",
+                    "Canalización de vena para sueroterapia",
+                    "Principios activos homeopáticos",
+                    "Acción de la mega dosis vitamina C",
+                    "MESOTERAPIA FACIAL",
+                    "Principios activos del uso facial",
+                    "Tratamientos de anti edad",
+                    "Tratamientos antiacné",
+                    "Tratamientos reafirmantes",
+                    "Tratamientos despigmentantes",
+                    "Corrección de ojeras y líneas de expresión",
+                    "Técnicas de aplicación facial",
+                    "Manejo y uso de enzimas recombinantes",
+                    "MESOTERAPIA CORPORAL",
+                    "Principios activos del uso corporal",
+                    "Tratamiento lipolítico",
+                    "Tratamiento reafirmante",
+                    "Tratamiento de regeneración dérmica",
+                    "Uso correcto de los anestésicos en mesoterapia"
+                ]
+            },
+            {
+                "numero": "10",
+                "nombre": "P.R.P",
+                "imagen": "assets/images/modulos_cosmiatria/m10.jpeg",
+                "temas": [
+                    "Exámenes de laboratorio en interpretación de resultados",
+                    "Análisis de hemograma completo",
+                    "Análisis de perfil hormonal",
+                    "Identificación de paciente patológico",
+                    "Plasma rico en plaquetas",
+                    "Mecanismo de acción del PRP",
+                    "Canalización de vena para toma de muestra",
+                    "Tratamientos, rejuvenecimiento, regeneración dérmica",
+                    "Manejo de la centrifuga",
+                    "Activación de los factores de crecimiento",
+                    "Técnicas de aplicación, contraindicaciones",
+                    "Anamnesis"
+                ]
+            },
+            {
+                "numero": "11",
+                "nombre": "Aparatología de avanzada",
+                "imagen": "assets/images/modulos_cosmiatria/m11.jpeg",
+                "temas": [
+                    "Ultrasonido, cavitación, ultra cavitación; tipos, usos, manejo",
+                    "Presoterapia; contraindicaciones y mecanismos de acción",
+                    "Radiofrecuencia; tipos usos y manejos",
+                    "Criolipolisis; contraindicaciones, usos y manejo",
+                    "HIFU portátil y profesional; contraindicaciones, usos y manejo",
+                    "Luz pulsada intensa (IPL); tratamientos, y contraindicaciones y mecanismos de acción",
+                    "Picosecond; Carboxiterapia, uso y manejo.",
+                    "Emsculp, uso y manejo."
+                ]
+            },
+            {
+                "numero": "12",
+                "nombre": "uso y manejo de peptonas facial y corporal",
+                "imagen": "assets/images/modulos_cosmiatria/m12.jpg",
+                "temas": [
+                    "Mecanismo de acción y uso médico / estético de las peptonas",
+                    "Rejuvenecimiento facial con peptonas",
+                    "Reafirmación y tonificación de glúteos",
+                    "Anatomía y estimulación del Músculo glúteo",
+                    "Uso adecuado de peptonas en hipertrofia muscular",
+                    "Vías de administración"
                 ]
             }
         ],

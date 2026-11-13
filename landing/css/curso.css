@@ -462,7 +462,8 @@ header {
     isolation: isolate;
 }
 
-.course-hero.course-hero-belleza::before {
+.course-hero.course-hero-belleza::before,
+.course-hero.course-hero-cosmetologia::before {
     content: '';
     position: fixed;
     inset: 0;
@@ -486,7 +487,9 @@ header {
     position: relative;
     z-index: 2;
 }
-.course-hero-belleza .hero-texture {
+.course-hero.course-hero-cosmetologia::before { background-image: url('../assets/images/hero_cosmetologia.jpg'); }
+.course-hero-belleza .hero-texture,
+.course-hero-cosmetologia .hero-texture {
     background: linear-gradient(90deg, rgba(17,17,17,.9) 0%, rgba(17,17,17,.6) 50%, rgba(17,17,17,.35) 100%);
 }
 
