@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "italic-serif-display",
+        "value": "*",
+        "files": [
+          "landing/curso.html"
+        ],
+        "createdAt": "2026-11-14T20:09:08.731Z",
+        "reason": "Established beauty academy editorial styling retained; unrelated to enrollment price changes"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "landing/curso.html"
+        ],
+        "createdAt": "2026-11-14T20:09:08.807Z",
+        "reason": "Existing Carrera Profesional label identifies education offering; retain established design"
+      }
+    ]
+  }
+}

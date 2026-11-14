@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <i class="${modulo.icono} modulo-icon"></i>
                 </div>
                 <div class="modulo-center">
-                    <h4>${modulo.nombre}</h4>
+                    <h3>${modulo.nombre}</h3>
                     <ul>
                         ${modulo.temas.map(tema => `<li>${tema}</li>`).join('')}
                     </ul>
@@ -144,42 +144,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const carreraSelect = document.getElementById('carrera-hero');
     if (carreraSelect) {
         carreraSelect.value = carreraData.nombre;
-        llenarHorarios(carreraData.nombre);
+
     }
     
 });
 
-
-// Función para llenar horarios (ahora usa los datos dinámicos de carreras)
-function llenarHorarios(nombreCarrera) {
-    const horarioSelect = document.getElementById('horario-hero');
-    horarioSelect.innerHTML = '<option value="">Selecciona el horario</option>';
-    
-    // Buscar la carrera en el objeto carreras y usar sus horarios
-    for (const key in carreras) {
-        if (carreras[key].nombre === nombreCarrera) {
-            carreras[key].horarios.forEach(horario => {
-                const option = document.createElement('option');
-                option.value = horario;
-                option.textContent = horario;
-                horarioSelect.appendChild(option);
-            });
-            break;
-        }
-    }
-}
-
-// Event listener para cambiar horarios
-document.addEventListener('DOMContentLoaded', function() {
-    const carreraSelect = document.getElementById('carrera-hero');
-    if (carreraSelect) {
-        carreraSelect.addEventListener('change', function() {
-            if (this.value) {
-                llenarHorarios(this.value);
-            }
-        });
-    }
-});
 
 // Enviar formulario a WhatsApp
 document.addEventListener('DOMContentLoaded', function() {
@@ -192,7 +161,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const apellido = document.getElementById('apellido-hero').value.trim();
             const direccion = document.getElementById('direccion-hero').value.trim();
             const carrera = document.getElementById('carrera-hero').value;
-            const horario = document.getElementById('horario-hero').value;
             
             if (!nombre || !apellido) {
                 alert('Por favor completa nombre y apellido');
@@ -209,12 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            if (!horario) {
-                alert('Por favor selecciona un horario');
-                return;
-            }
-            
-            const mensaje = encodeURIComponent(`Hola, me interesa inscribirme:\n\nNombre: ${nombre} ${apellido}\nDirección: ${direccion}\nCarrera: ${carrera}\nHorario: ${horario}`);
+const mensaje = encodeURIComponent(`Hola, me interesa inscribirme:\n\nNombre: ${nombre} ${apellido}\nDirección: ${direccion}\nCarrera: ${carrera}\nDeseo consultar las próximas fechas de inscripción y los horarios disponibles.`);
             
             window.open(`https://wa.me/593989330599?text=${mensaje}`, '_blank', 'noopener');
         });

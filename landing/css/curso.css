@@ -1,4 +1,5 @@
 /* Pénsum desplegable de Belleza */
+.hero-form .admissions-date-note { color:#fff8ed; font-size:14px; line-height:1.6; margin:4px 0 12px; }
 .beauty-module { border:1px solid #665039; border-radius:12px; overflow:hidden; background:#1a1713; color:#fff8ed; }
 .beauty-module summary { display:flex; align-items:center; gap:24px; padding:24px; cursor:pointer; list-style:none; min-height:90px; }
 .beauty-module summary::-webkit-details-marker { display:none; }
@@ -81,7 +82,7 @@ header {
     text-align: center;
 }
 .req-card .icon { font-size: 32px; color: var(--primary-gold); margin-bottom: 15px; }
-.req-card h4 { font-size: 16px; margin-bottom: 10px; color: var(--dark-bg); }
+.req-card h3 { font-size: 16px; margin-bottom: 10px; color: var(--dark-bg); }
 .req-card p { font-size: 14px; color: var(--gray-text); }
 
 /* ================= VIDEO (curso.html) ================= */
@@ -195,7 +196,7 @@ header {
     z-index: 2;
 }
 
-.modulo-center h4 {
+.modulo-center h3 {
     font-family: var(--font-heading);
     font-size: 22px;
     color: var(--white);
@@ -580,7 +581,7 @@ header {
     height: fit-content;
 }
 
-.hero-form h3 {
+.hero-form h2 {
     font-family: var(--font-heading);
     font-size: 22px;
     color: var(--white);

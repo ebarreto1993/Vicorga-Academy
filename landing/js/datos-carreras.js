@@ -169,17 +169,13 @@ const carreras = {
             }
         ],
         "matricula": 80,
-        "mensualidad": 180,
+        "mensualidad": 150,
         "incluye": [
             "Uniforme de la academia",
             "Mochila de la academia",
             "30% de los materiales para clases"
         ],
-        "horarios": [
-            "Martes y Jueves 15 de octubre 9:00 AM - 4:00 PM",
-            "Sábados 18 de octubre 9:00 AM - 4:00 PM",
-            "Lunes y Miércoles 13 de octubre 6:00 PM - 9:00 PM"
-        ]
+        "horarios": []
     },
     "barberia": {
         "nombre": "Barbería",
@@ -237,16 +233,13 @@ const carreras = {
             }
         ],
         "matricula": 80,
-        "mensualidad": 180,
+        "mensualidad": 150,
         "incluye": [
             "Máquina de corte profesional",
             "uniforme de la academia",
             "Mochila de la academia"
         ],
-        "horarios": [
-            "Sábados 29 de agosto 9:00 AM - 4:00 PM",
-            "Lunes y Miércoles 28 de septiembre 9:00 AM - 4:00 PM"
-        ]
+        "horarios": []
     },
     "unas": {
         "nombre": "Uñas",
@@ -316,17 +309,13 @@ const carreras = {
             }
         ],
         "matricula": 80,
-        "mensualidad": 180,
+        "mensualidad": 150,
         "incluye": [
             "30% de los materiales para clases",
             "Uniforme de la academia",
             "Mochila de la academia"
         ],
-        "horarios": [
-            "Lunes y Miércoles 30 de septiembre 9:00 AM - 12:00 PM",
-            "Martes y Jueves 1 de octubre 9:00 AM - 12:00 PM",
-            "Sábados 4 de octubre 9:00 AM - 4:00 PM"
-        ]
+        "horarios": []
     },
     "cosmetologia": {
         "nombre": "Cosmiatría",
@@ -553,15 +542,12 @@ const carreras = {
             }
         ],
         "matricula": 80,
-        "mensualidad": 180,
+        "mensualidad": 150,
         "incluye": [
             "30% de material para prácticas en clases por módulo",
             "Uniforme de la academia",
             "Mochila de la academia"
         ],
-        "horarios": [
-            "Martes y Jueves 29 de septiembre 9:00 AM - 4:00 PM",
-            "Sábados 3 de octubre 9:00 AM - 4:00 PM"
-        ]
+        "horarios": []
     }
 };
