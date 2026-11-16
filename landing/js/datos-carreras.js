@@ -179,7 +179,7 @@ const carreras = {
     },
     "barberia": {
         "nombre": "Barbería",
-        "descripcion": "Carrera de Barbería del centro de formación artesanal. Aprende cortes clásicos y modernos, técnicas de barba y atención profesional. Duración: 1 año.",
+        "descripcion": "Carrera de Barbería del centro de formación artesanal particular Vicorga Academy. Aprende cortes clásicos y modernos, técnicas de barba y atención profesional. Duración: 1 año.",
         "duracion": "1 año (12 meses)",
         "videoId": "dummyId007",
         "modulos": [
@@ -242,8 +242,8 @@ const carreras = {
         "horarios": []
     },
     "unas": {
-        "nombre": "Uñas",
-        "descripcion": "Carrera de Uñas del centro de formación artesanal. Aprende manicura, pedicura y técnicas profesionales de diseño y aplicación. Duración: 1 año.",
+        "nombre": "Técnica en Uñas",
+        "descripcion": "Carrera de Técnica en Uñas del centro de formación artesanal particular Vicorga Academy. Aprende manicura, pedicura y técnicas profesionales de diseño y aplicación. Duración: 1 año.",
         "duracion": "1 año (12 meses)",
         "videoId": "dummyId003",
         "modulos": [
