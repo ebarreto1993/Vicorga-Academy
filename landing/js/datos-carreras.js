@@ -1,7 +1,7 @@
 // Carreras del centro de formación artesanal
 const carreras = {
     "maestria-belleza": {
-        "nombre": "Maestra en Belleza",
+        "nombre": "MAESTRA/O DE TALLER EN BELLEZA",
         "descripcion": "Carrera de Maestra en Belleza del centro de formación artesanal particular Vicorga Academy. Formación integral con 12 módulos especializados para desarrollar tus habilidades profesionales. Duración: 1 año.",
         "duracion": "1 año (12 meses)",
         "videoId": "sV3_Bk5__3A",
@@ -178,7 +178,7 @@ const carreras = {
         "horarios": []
     },
     "barberia": {
-        "nombre": "Barbería",
+        "nombre": "MAESTRA/O DE TALLER EN BARBERÍA",
         "descripcion": "Carrera de Barbería del centro de formación artesanal particular Vicorga Academy. Aprende cortes clásicos y modernos, técnicas de barba y atención profesional. Duración: 1 año.",
         "duracion": "1 año (12 meses)",
         "videoId": "dummyId007",
@@ -242,7 +242,7 @@ const carreras = {
         "horarios": []
     },
     "unas": {
-        "nombre": "Técnica en Uñas",
+        "nombre": "MAESTRA/O DE TALLER EN MANICURISTA Y PEDICURISTA",
         "descripcion": "Carrera de Técnica en Uñas del centro de formación artesanal particular Vicorga Academy. Aprende manicura, pedicura y técnicas profesionales de diseño y aplicación. Duración: 1 año.",
         "duracion": "1 año (12 meses)",
         "videoId": "dummyId003",
@@ -392,7 +392,7 @@ const carreras = {
         "horarios": []
     },
     "cosmetologia": {
-        "nombre": "Cosmiatría",
+        "nombre": "MAESTRA/O DE TALLER EN COSMIATRÍA",
         "descripcion": "Carrera de Cosmiatría del centro de formación artesanal particular Vicorga Academy. Formación en ciencias cosméticas, cuidado de la piel y tratamientos estéticos. Duración: 1 año.",
         "duracion": "1 año (12 meses)",
         "videoId": "6HDYJQtG69Y",

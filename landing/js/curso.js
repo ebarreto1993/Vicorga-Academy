@@ -143,6 +143,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Pre-llenar carrera y horarios
     const carreraSelect = document.getElementById('carrera-hero');
     if (carreraSelect) {
+        carreraSelect.replaceChildren(new Option('Selecciona la carrera', ''));
+        Object.values(carreras).forEach(carrera => {
+            carreraSelect.add(new Option(carrera.nombre, carrera.nombre));
+        });
         carreraSelect.value = carreraData.nombre;
 
     }
