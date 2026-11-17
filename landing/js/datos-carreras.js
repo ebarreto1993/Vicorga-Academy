@@ -248,63 +248,137 @@ const carreras = {
         "videoId": "dummyId003",
         "modulos": [
             {
-                "numero": "01",
-                "nombre": "Manicura Rusa",
-                "icono": "fas fa-hand-sparkles",
-                "imagen": "https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?w=600",
+                "numero": "1",
+                "nombre": "VIP Russian – Manicure in Fire",
+                "imagen": "assets/images/modulos_uñas/m1.jpg",
                 "temas": [
-                    "Técnica de manicura rusa",
-                    "Herramientas especializadas",
-                    "Cuidado de cutículas",
-                    "Diseños básicos"
+                    "Manicura combinada",
+                    "Uso de drill y sus fresas",
+                    "Gramajes correctos",
+                    "Esmaltados perfectos",
+                    "Nivelación con rubber",
+                    "Diseños de mano alzada"
                 ]
             },
             {
-                "numero": "02",
-                "nombre": "Técnicas Acrílico",
-                "icono": "fas fa-palette",
-                "imagen": "https://images.pexels.com/photos/3997387/pexels-photo-3997387.jpeg?w=600",
+                "numero": "2",
+                "nombre": "Pedicura",
+                "imagen": "assets/images/modulos_uñas/m2.jpg",
                 "temas": [
-                    "Acrígel básico",
-                    "Acrígel encapsulado",
-                    "Acrílico full cover",
-                    "Reparación y mantenimiento"
+                    "Limpieza correcta",
+                    "Manejo de fresas y productos",
+                    "Bioseguridad y enfermedades",
+                    "Esmaltados perfectos",
+                    "Reconstrucciones"
                 ]
             },
             {
-                "numero": "03",
-                "nombre": "Técnicas Gel",
-                "icono": "fas fa-lightbulb",
-                "imagen": "https://images.pexels.com/photos/3997388/pexels-photo-3997388.jpeg?w=600",
+                "numero": "3",
+                "nombre": "Fotografía",
+                "imagen": "assets/images/modulos_uñas/m3.jpg",
                 "temas": [
-                    "Gel básico",
-                    "Gel encapsulado",
-                    "Gel builder",
-                    "Diseños en gel"
+                    "Toma de fotografía: ángulos e iluminación",
+                    "Corrección de detalles en fotografía",
+                    "Aplicaciones más usadas para edición",
+                    "Creación de tu primer reel"
                 ]
             },
             {
-                "numero": "04",
-                "nombre": "Diseños y Decoración",
-                "icono": "fas fa-sparkles",
-                "imagen": "https://images.pexels.com/photos/3997389/pexels-photo-3997389.jpeg?w=600",
+                "numero": "4",
+                "nombre": "Soft Gel Beginner",
+                "imagen": "assets/images/modulos_uñas/m4.jpg",
                 "temas": [
-                    "Diseños 3D",
-                    "Nail art",
-                    "Técnicas de degradado",
-                    "Aplicación de brillos y pedrería"
+                    "Teoría de tips",
+                    "Colocación adecuada del tip soft",
+                    "Diseños y técnicas en tendencia con este nuevo sistema"
                 ]
             },
             {
-                "numero": "05",
-                "nombre": "Pedicura Profesional",
-                "icono": "fas fa-shoe-prints",
-                "imagen": "https://images.pexels.com/photos/3997390/pexels-photo-3997390.jpeg?w=600",
+                "numero": "5",
+                "nombre": "Builder Gel – Gel de construcción",
+                "imagen": "assets/images/modulos_uñas/m5.jpg",
                 "temas": [
-                    "Pedicura higienista",
-                    "Exfoliación de pies",
-                    "Masaje y reflexología",
-                    "Diseños en pedicura"
+                    "Teoría del gel de construcción",
+                    "Manejo del producto",
+                    "Uñas básicas y encapsuladas",
+                    "Estructuras de salón"
+                ]
+            },
+            {
+                "numero": "6",
+                "nombre": "Marketing de redes",
+                "imagen": "assets/images/modulos_uñas/m6.jpg",
+                "temas": [
+                    "Creación de logo",
+                    "Creación de tu página de Instagram",
+                    "Cómo utilizar Edits y generar un copy"
+                ]
+            },
+            {
+                "numero": "7",
+                "nombre": "Polygel Hyper Natural",
+                "imagen": "assets/images/modulos_uñas/m7.jpg",
+                "temas": [
+                    "Teoría de polygel",
+                    "Manejo del producto",
+                    "Estructuras de salón",
+                    "Diseños y técnicas en polygel",
+                    "Reversa y mosaicos"
+                ]
+            },
+            {
+                "numero": "8",
+                "nombre": "Sistema Dual – Técnicas en tendencia",
+                "imagen": "assets/images/modulos_uñas/m8.jpg",
+                "temas": [
+                    "Teoría de cápsulas",
+                    "Manejo del producto",
+                    "Técnica híbrida",
+                    "Full cover",
+                    "Baby shine",
+                    "Diseños y encapsulados"
+                ]
+            },
+            {
+                "numero": "9",
+                "nombre": "Perfeccionamiento de Dual Sandwich",
+                "imagen": "assets/images/modulos_uñas/m9.jpg",
+                "temas": [
+                    "Prácticas en dedos de silicona",
+                    "Todas las estructuras de salón: cuadrada, almond, coffin y stiletto"
+                ]
+            },
+            {
+                "numero": "10",
+                "nombre": "Acrílico Hyper Realista",
+                "imagen": "assets/images/modulos_uñas/m10.jpg",
+                "temas": [
+                    "Teoría y manejo del producto",
+                    "Full cover",
+                    "Baby shine",
+                    "Baby glitter",
+                    "Técnica ombré"
+                ]
+            },
+            {
+                "numero": "11",
+                "nombre": "Acrílico – Perfeccionamiento",
+                "imagen": "assets/images/modulos_uñas/m11.jpg",
+                "temas": [
+                    "Not polish",
+                    "Reversa más one stroke",
+                    "Doble reversa",
+                    "Técnicas en 3D y 4D"
+                ]
+            },
+            {
+                "numero": "12",
+                "nombre": "Expert Nails",
+                "imagen": "assets/images/modulos_uñas/m12.jpg",
+                "temas": [
+                    "Estructuras de fantasía",
+                    "Decoloración en alto relieve",
+                    "Preparación de tesis y examen final"
                 ]
             }
         ],

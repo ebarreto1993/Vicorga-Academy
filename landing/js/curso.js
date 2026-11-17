@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Actualizar hero
     document.querySelector('.course-hero')?.classList.toggle('course-hero-belleza', carreraParam === 'maestria-belleza');
     document.querySelector('.course-hero')?.classList.toggle('course-hero-cosmetologia', carreraParam === 'cosmetologia');
+    document.querySelector('.course-hero')?.classList.toggle('course-hero-unas', carreraParam === 'unas');
     const h1 = document.querySelector('.course-hero h1');
     if (h1) {
         const palabras = carreraData.nombre.split(' ');
@@ -39,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (modulosList) {
         modulosList.innerHTML = '';
         carreraData.modulos.forEach(modulo => {
-            if (carreraParam === 'maestria-belleza' || carreraParam === 'cosmetologia') {
+            if (['maestria-belleza', 'cosmetologia', 'unas'].includes(carreraParam)) {
                 const imagenes = {
                     'Manicura y Pedicura': 'modulo_uñas.jpeg',
                     'Faciales / Skin Care': 'modulo_tratamiento_facial.jpeg',
@@ -60,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const body = document.createElement('div');
                 body.className = 'beauty-module-body';
                 const photo = document.createElement('img');
-                photo.src = carreraParam === 'cosmetologia' ? modulo.imagen : `assets/images/modulos_belleza/${imagenes[modulo.nombre]}`;
+                photo.src = carreraParam !== 'maestria-belleza' ? modulo.imagen : `assets/images/modulos_belleza/${imagenes[modulo.nombre]}`;
                 photo.alt = '';
                 photo.loading = 'lazy';
                 const content = document.createElement('div');
@@ -132,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 Cédula: #0152089298</em><br><br>
                 
                 <strong>⚠️ NOTAS IMPORTANTES:</strong><br>
-                • Examen final obligatorio para recibir tu certificación<br>
                 • Puedes reservar tu cupo con $20<br>
                 • La matrícula y pensión deben estar pagadas hasta el día de inicio<br>
                 <strong>• Los valores cancelados o abonados NO son reembolsables bajo ningún motivo.</strong>
