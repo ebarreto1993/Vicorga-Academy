@@ -181,7 +181,7 @@ const carreras = {
         "nombre": "MAESTRA/O DE TALLER EN BARBERÍA",
         "descripcion": "Carrera de Barbería del centro de formación artesanal particular Vicorga Academy. Aprende cortes clásicos y modernos, técnicas de barba y atención profesional. Duración: 1 año.",
         "duracion": "1 año (12 meses)",
-        "videoId": "dummyId007",
+        "videoId": "FaFkNU3nGTk",
         "modulos": [
             {
                 "numero": "1",
