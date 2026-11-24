@@ -1,0 +1,25 @@
+/* Pénsum editorial inspirado en Vicorga Capacitaciones. */
+.modulos-section.dark-theme { background:#111; color:#fff6e8; }
+.modulos-section.dark-theme .section-title { color:#fff6e8 !important; }
+.modulos-list { gap:28px; }
+.pensum-page { background:#171410; color:#fff6e8; border-top:2px solid #b28a4e; }
+.pensum-page .beauty-module-body { min-height:560px; background-color:#171410; background-image:repeating-linear-gradient(45deg,rgba(198,156,109,.035) 0,rgba(198,156,109,.035) 1px,transparent 1px,transparent 12px); }
+.pensum-page .beauty-module-body>img { inset:0 auto 0 0; width:48%; object-fit:cover; object-position:center top; mask-image:linear-gradient(90deg,#000 60%,transparent); -webkit-mask-image:linear-gradient(90deg,#000 60%,transparent); }
+.pensum-page .beauty-module-body::before { background:none; }
+.pensum-page .beauty-module-content { width:60%; margin-left:40%; padding:48px 38px; }
+.pensum-page .beauty-module-label { color:#e4bd83; font-size:14px; letter-spacing:.12em; text-transform:uppercase; margin-bottom:14px; }
+.pensum-page h3 { margin:0 0 28px; font-family:var(--font-heading); font-size:clamp(27px,3vw,42px); font-weight:500; line-height:1.2; color:#fff6e8; }
+.pensum-page .beauty-module-content ul { display:grid; grid-template-columns:1fr; gap:12px; }
+.pensum-page .beauty-module-content li { color:#eee5d9; font-size:17px; line-height:1.6; }
+.pensum-page .beauty-module-content li::before { color:#e4bd83; }
+.pensum-page:nth-child(even) .beauty-module-body>img { left:auto; right:0; mask-image:linear-gradient(270deg,#000 60%,transparent); -webkit-mask-image:linear-gradient(270deg,#000 60%,transparent); }
+.pensum-page:nth-child(even) .beauty-module-content { margin-left:0; }
+@media(max-width:768px) {
+    .modulos-section>.container { width:100%; max-width:none; padding-inline:0; }
+    .modulos-section .section-header { padding-inline:24px; }
+    .pensum-page .beauty-module-body { min-height:540px; }
+    .pensum-page .beauty-module-body>img,.pensum-page:nth-child(even) .beauty-module-body>img { position:absolute; display:block; inset:0; width:100%; height:100%; object-fit:cover; object-position:center top; mask-image:none; -webkit-mask-image:none; }
+    .pensum-page .beauty-module-body::before { background:linear-gradient(90deg,rgba(10,9,8,.9),rgba(10,9,8,.76)); }
+    .pensum-page .beauty-module-content,.pensum-page:nth-child(even) .beauty-module-content { width:100%; margin:0; padding:40px 24px; }
+    .pensum-page .beauty-module-content li { font-size:16px; }
+}

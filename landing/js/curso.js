@@ -54,11 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Barbería': 'modulo_barberia.jpeg',
                     'Colorimetría': 'modulo_color.jpeg'
                 };
-                const item = document.createElement('details');
-                item.className = 'beauty-module';
-                item.name = `pensum-${carreraParam}`;
-                const summary = document.createElement('summary');
-                summary.innerHTML = `<span class="beauty-module-number">${modulo.numero}</span><span class="beauty-module-name">${modulo.nombre}</span><span class="beauty-module-toggle" aria-hidden="true">+</span>`;
+                const item = document.createElement('article');
+                item.className = 'pensum-page';
                 const body = document.createElement('div');
                 body.className = 'beauty-module-body';
                 const photo = document.createElement('img');
@@ -67,23 +64,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 photo.loading = 'lazy';
                 const content = document.createElement('div');
                 content.className = 'beauty-module-content';
+                const heading = document.createElement('h3');
+                heading.textContent = modulo.nombre;
                 const label = document.createElement('p');
                 label.className = 'beauty-module-label';
-                label.textContent = 'Contenido del módulo';
+                label.textContent = `Módulo ${modulo.numero}`;
                 const list = document.createElement('ul');
                 modulo.temas.forEach(tema => {
                     const li = document.createElement('li');
                     li.textContent = tema;
                     list.appendChild(li);
                 });
-                content.append(label, list);
+                content.append(label, heading, list);
                 body.append(photo, content);
-                item.append(summary, body);
-                item.addEventListener('toggle', () => {
-                    if (item.open) modulosList.querySelectorAll('details').forEach(other => {
-                        if (other !== item) other.open = false;
-                    });
-                });
+                item.append(body);
                 modulosList.appendChild(item);
                 return;
             }
