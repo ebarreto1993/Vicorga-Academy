@@ -184,51 +184,175 @@ const carreras = {
         "videoId": "dummyId007",
         "modulos": [
             {
-                "numero": "01",
-                "nombre": "Historia y Fundamentos de Barbería",
-                "icono": "fas fa-book",
-                "imagen": "https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?w=600",
+                "numero": "1",
+                "nombre": "Introducción a la Barbería",
+                "imagen": "assets/images/modulos_barberia/m1.jpg",
                 "temas": [
-                    "Historia de la barbería",
-                    "Técnicas clásicas",
-                    "Herramientas profesionales",
-                    "Seguridad e higiene"
+                    "Fundamentos de la barbería profesional",
+                    "Servicios de un barbero",
+                    "Bioseguridad en la barbería y reconocimiento de alzas (clase práctica)",
+                    "Manejo de máquina, tijeras y navaja",
+                    "Ergonomía, posturas y prevención de lesiones laborales",
+                    "Presentación profesional y trato con clientes",
+                    "Prácticas de uso de herramientas",
+                    "Cortes básicos"
                 ]
             },
             {
-                "numero": "02",
-                "nombre": "Cortes Clásicos",
-                "icono": "fas fa-scissors",
-                "imagen": "https://images.pexels.com/photos/1813273/pexels-photo-1813273.jpeg?w=600",
+                "numero": "2",
+                "nombre": "Cortes tradicionales",
+                "imagen": "assets/images/modulos_barberia/m2.jpg",
                 "temas": [
-                    "Corte sólido 0° y 45°",
-                    "Taper fade",
-                    "Mohicano",
-                    "Skin fade"
+                    "Anatomía del cráneo y zonas de trabajo",
+                    "Seccionamientos y particiones básicas (clase práctica)",
+                    "Dirección de crecimiento y lectura del cabello",
+                    "Guías de longitud y formas",
+                    "Corte uniforme con máquina",
+                    "Técnicas básicas de máquina sobre peine",
+                    "Cortes tradicionales de una y dos longitudes",
+                    "Contornos, patillas, nuca y líneas de terminación",
+                    "Introducción al sombreado y suavizado de marcas",
+                    "Prácticas supervisadas con modelo"
                 ]
             },
             {
-                "numero": "03",
-                "nombre": "Rituals de Barba",
-                "icono": "fas fa-razor",
-                "imagen": "https://images.pexels.com/photos/1813274/pexels-photo-1813274.jpeg?w=600",
+                "numero": "3",
+                "nombre": "Tijeras y estructuras",
+                "imagen": "assets/images/modulos_barberia/m3.jpg",
                 "temas": [
-                    "Afeitado clásico",
-                    "Ritual de barba completo",
-                    "Cuidado de la barba",
-                    "Productos especializados"
+                    "Particiones, subsecciones y distribuciones",
+                    "Proyección, elevaciones y ángulos de 0°, 45°, 90° y 180°",
+                    "Línea guía fija y móvil; control de longitudes",
+                    "Estructuras sólidas y en capas",
+                    "Técnica tijera sobre peine y control de volumen",
+                    "Cortes clásicos con acabado profesional",
+                    "Introducción al visagismo del corte masculino"
                 ]
             },
             {
-                "numero": "04",
-                "nombre": "Cortes Modernos",
-                "icono": "fas fa-wand-magic-sparkles",
-                "imagen": "https://images.pexels.com/photos/1813275/pexels-photo-1813275.jpeg?w=600",
+                "numero": "4",
+                "nombre": "Sombreados y desvanecidos",
+                "imagen": "assets/images/modulos_barberia/m4.jpg",
                 "temas": [
-                    "Cortes actuales",
-                    "Diseños personalizados",
-                    "Líneas y detalles",
-                    "Prácticas en clientes reales"
+                    "Técnicas de difuminado y lectura de líneas",
+                    "Control de la palanca, alzas intermedias y herramientas de detalle",
+                    "Sombreado ascendente",
+                    "Mid fade: desvanecido medio",
+                    "Low fade: desvanecido bajo",
+                    "High fade: desvanecido alto",
+                    "Conexiones y cambio de plano"
+                ]
+            },
+            {
+                "numero": "5",
+                "nombre": "Sombreados avanzados",
+                "imagen": "assets/images/modulos_barberia/m5.jpg",
+                "temas": [
+                    "Taper fade: medio, alto y bajo",
+                    "Sombreado en V",
+                    "Burst fade",
+                    "Mullet y modern mullet",
+                    "Manejo de volumen y densidades",
+                    "Cortes con textura",
+                    "Diseños y figuras"
+                ]
+            },
+            {
+                "numero": "6",
+                "nombre": "Tricología y tratamientos",
+                "imagen": "assets/images/modulos_barberia/m6.jpg",
+                "temas": [
+                    "Tricología y aplicación en barbería",
+                    "Tipos de cabello",
+                    "Enfermedades capilares",
+                    "Exfoliación capilar",
+                    "Productos para el cuidado capilar",
+                    "Tratamientos para cabellos secos y grasos"
+                ]
+            },
+            {
+                "numero": "7",
+                "nombre": "Barba y cuidado facial",
+                "imagen": "assets/images/modulos_barberia/m7.jpg",
+                "temas": [
+                    "Tipos de barba y bigote",
+                    "Diseños de barba según visagismo",
+                    "Recorte, perfilado y degradado en barba",
+                    "Preparación de la piel y ritual de afeitado",
+                    "Diseño y limpieza de cejas",
+                    "Limpieza facial básica y cuidado de la piel"
+                ]
+            },
+            {
+                "numero": "8",
+                "nombre": "Visagismo, peinados y asesoría de imagen",
+                "imagen": "assets/images/modulos_barberia/m8.jpg",
+                "temas": [
+                    "Visagismo avanzado",
+                    "Tipos de rostro, cráneo y perfil",
+                    "Elección de cortes según tipo de cabello y crecimiento",
+                    "Técnicas de secado y cepillado",
+                    "Peinados clásicos",
+                    "Peinados con acabados modernos",
+                    "Selección de productos para moldeado, peinado y fijado",
+                    "Asesoría integral de corte y barba"
+                ]
+            },
+            {
+                "numero": "9",
+                "nombre": "Permacología y transformaciones",
+                "imagen": "assets/images/modulos_barberia/m9.jpg",
+                "temas": [
+                    "Texturizado con tijeras y técnica de corte",
+                    "Peinados y definición de cabello ondulado y rizado",
+                    "Permacología de ondulación permanente",
+                    "Selección de productos",
+                    "Contraindicaciones",
+                    "Bigudíes y técnicas de armado",
+                    "Integración de corte con ondulación permanente"
+                ]
+            },
+            {
+                "numero": "10",
+                "nombre": "Colorimetría",
+                "imagen": "assets/images/modulos_barberia/m10.jpg",
+                "temas": [
+                    "Introducción a la colorimetría y teoría del color",
+                    "Estrella cromática y leyes del color",
+                    "Alturas de tonos, matices y reflejos",
+                    "Tonos fríos y cálidos y neutralización",
+                    "Decoloración y fórmulas",
+                    "Cubrimiento de canas en cabello y barba",
+                    "Tono sobre tono",
+                    "Mechas",
+                    "Decoloración global"
+                ]
+            },
+            {
+                "numero": "11",
+                "nombre": "Redes sociales y marketing",
+                "imagen": "assets/images/modulos_barberia/m11.jpg",
+                "temas": [
+                    "Creación de tu página de Instagram",
+                    "Fotografía para barberos",
+                    "Creación de videos de cortes de cabello",
+                    "Iluminación y ángulos",
+                    "Aplicaciones más usadas para edición de fotos y video",
+                    "Creación de copys",
+                    "Creación de tu primer reel"
+                ]
+            },
+            {
+                "numero": "12",
+                "nombre": "Prácticas profesionales y gestión de un barbero profesional",
+                "imagen": "assets/images/modulos_barberia/m12.jpg",
+                "temas": [
+                    "Protocolo de servicios",
+                    "Cálculo básico de precios",
+                    "Venta de productos en barbería",
+                    "Revisión de técnicas aprendidas",
+                    "Prácticas avanzadas",
+                    "Evaluación final"
                 ]
             }
         ],

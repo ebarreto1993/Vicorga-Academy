@@ -465,7 +465,8 @@ header {
 
 .course-hero.course-hero-belleza::before,
 .course-hero.course-hero-cosmetologia::before,
-.course-hero.course-hero-unas::before {
+.course-hero.course-hero-unas::before,
+.course-hero.course-hero-barberia::before {
     content: '';
     position: fixed;
     inset: 0;
@@ -491,9 +492,11 @@ header {
 }
 .course-hero.course-hero-cosmetologia::before { background-image: url('../assets/images/hero_cosmetologia.jpg'); }
 .course-hero.course-hero-unas::before { background-image: url('../assets/images/hero_uñas.png'); }
+.course-hero.course-hero-barberia::before { background-image: url('../assets/images/hero_barberia.jpg'); }
 .course-hero-belleza .hero-texture,
 .course-hero-cosmetologia .hero-texture,
-.course-hero-unas .hero-texture {
+.course-hero-unas .hero-texture,
+.course-hero-barberia .hero-texture {
     background: linear-gradient(90deg, rgba(17,17,17,.9) 0%, rgba(17,17,17,.6) 50%, rgba(17,17,17,.35) 100%);
 }
 

@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.course-hero')?.classList.toggle('course-hero-belleza', carreraParam === 'maestria-belleza');
     document.querySelector('.course-hero')?.classList.toggle('course-hero-cosmetologia', carreraParam === 'cosmetologia');
     document.querySelector('.course-hero')?.classList.toggle('course-hero-unas', carreraParam === 'unas');
+    document.querySelector('.course-hero')?.classList.toggle('course-hero-barberia', carreraParam === 'barberia');
     const h1 = document.querySelector('.course-hero h1');
     if (h1) {
         const palabras = carreraData.nombre.split(' ');
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (modulosList) {
         modulosList.innerHTML = '';
         carreraData.modulos.forEach(modulo => {
-            if (['maestria-belleza', 'cosmetologia', 'unas'].includes(carreraParam)) {
+            if (['maestria-belleza', 'cosmetologia', 'unas', 'barberia'].includes(carreraParam)) {
                 const imagenes = {
                     'Manicura y Pedicura': 'modulo_uñas.jpeg',
                     'Faciales / Skin Care': 'modulo_tratamiento_facial.jpeg',
