@@ -345,7 +345,7 @@ const carreras = {
             {
                 "numero": "12",
                 "nombre": "Prácticas profesionales y gestión de un barbero profesional",
-                "imagen": "assets/images/modulos_barberia/m12.jpeg",
+                "imagen": "assets/images/modulos_barberia/m12.mp4",
                 "temas": [
                     "Protocolo de servicios",
                     "Cálculo básico de precios",
