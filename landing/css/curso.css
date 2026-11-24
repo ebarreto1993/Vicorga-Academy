@@ -1,4 +1,17 @@
 /* Pénsum desplegable de Belleza */
+.career-footer { padding:56px 0 24px; background:#111; border-top:1px solid #3c3023; }
+.career-footer-top { display:flex; align-items:center; justify-content:space-between; gap:40px; padding-bottom:32px; }
+.career-footer-brand .logo-img { height:58px; }
+.career-footer-brand>p { max-width:350px; margin:18px 0 0; color:#c9c3bb; font-size:14px; line-height:1.7; }
+.career-footer-community>p { margin:0 0 14px; color:#e4c291; font-size:14px; }
+.career-footer .social-links { gap:10px; }
+.career-footer .social-links a { display:flex; align-items:center; justify-content:center; width:44px; height:44px; border:1px solid #655039; border-radius:50%; color:#e4c291; font-size:20px; transition:background-color 180ms ease,color 180ms ease; }
+.career-footer .social-links a:focus-visible { outline:2px solid #e4c291; outline-offset:4px; }
+.career-footer .footer-bottom { display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:24px; text-align:left; }
+.career-footer .footer-bottom p { margin:0; color:#bfb8af; font-size:13px; line-height:1.6; }
+.career-footer .footer-bottom a { color:#e4c291; text-decoration:underline; text-underline-offset:4px; }
+@media(hover:hover) and (pointer:fine) { .career-footer .social-links a:hover { background:#e4c291; color:#17130f; transform:none; } }
+@media(max-width:768px) { .career-footer { padding:40px 0 24px; } .career-footer-top { flex-direction:column; gap:28px; text-align:center; } .career-footer-brand .logo { justify-content:center; } .career-footer .footer-bottom { flex-direction:column; text-align:center; gap:10px; } .career-footer .social-links { justify-content:center; } }
 .hero-form .admissions-date-note { color:#fff8ed; font-size:14px; line-height:1.6; margin:4px 0 12px; }
 .beauty-module { border:1px solid #665039; border-radius:12px; overflow:hidden; background:#1a1713; color:#fff8ed; }
 .beauty-module summary { display:flex; align-items:center; gap:24px; padding:24px; cursor:pointer; list-style:none; min-height:90px; }
