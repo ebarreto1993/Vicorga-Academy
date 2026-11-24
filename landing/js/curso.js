@@ -1,7 +1,7 @@
 // Función para llenar horarios (ahora usa los datos dinámicos de carreras)
 // Obtener parámetro de URL
 const params = new URLSearchParams(window.location.search);
-const requestedCarrera = params.get('carrera') || 'maestria-belleza';
+const requestedCarrera = params.get('carrera') || document.documentElement.dataset.carrera || 'maestria-belleza';
 const carreraParam = Object.hasOwn(carreras, requestedCarrera) ? requestedCarrera : 'maestria-belleza';
 const carreraData = carreras[carreraParam];
 

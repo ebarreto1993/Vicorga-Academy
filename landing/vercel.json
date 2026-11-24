@@ -1,0 +1,10 @@
+{
+  "buildCommand": "node generar-carreras.cjs",
+  "outputDirectory": ".",
+  "rewrites": [
+    { "source": "/curso.html", "has": [{ "type": "query", "key": "carrera", "value": "cosmetologia" }], "destination": "/carrera-cosmetologia.html" },
+    { "source": "/curso.html", "has": [{ "type": "query", "key": "carrera", "value": "unas" }], "destination": "/carrera-unas.html" },
+    { "source": "/curso.html", "has": [{ "type": "query", "key": "carrera", "value": "barberia" }], "destination": "/carrera-barberia.html" },
+    { "source": "/curso.html", "has": [{ "type": "query", "key": "carrera", "value": "maestria-belleza" }], "destination": "/carrera-maestria-belleza.html" }
+  ]
+}
