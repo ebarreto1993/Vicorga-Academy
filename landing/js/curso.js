@@ -58,10 +58,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 item.className = 'pensum-page';
                 const body = document.createElement('div');
                 body.className = 'beauty-module-body';
-                const photo = document.createElement('img');
-                photo.src = carreraParam !== 'maestria-belleza' ? modulo.imagen : `assets/images/modulos_belleza/${imagenes[modulo.nombre]}`;
-                photo.alt = '';
-                photo.loading = 'lazy';
+                const mediaSource = carreraParam !== 'maestria-belleza' ? modulo.imagen : `assets/images/modulos_belleza/${imagenes[modulo.nombre]}`;
+                const isVideo = /\.mp4$/i.test(mediaSource);
+                const photo = document.createElement(isVideo ? 'video' : 'img');
+                photo.className = 'pensum-media';
+                if (isVideo) {
+                    photo.muted = true;
+                    photo.defaultMuted = true;
+                    photo.autoplay = true;
+                    photo.loop = true;
+                    photo.playsInline = true;
+                    photo.controls = false;
+                    photo.preload = 'metadata';
+                    photo.setAttribute('muted', '');
+                    photo.setAttribute('playsinline', '');
+                    photo.setAttribute('aria-hidden', 'true');
+                    photo.tabIndex = -1;
+                } else {
+                    photo.alt = '';
+                    photo.loading = 'lazy';
+                }
+                photo.src = mediaSource;
                 const content = document.createElement('div');
                 content.className = 'beauty-module-content';
                 const heading = document.createElement('h3');

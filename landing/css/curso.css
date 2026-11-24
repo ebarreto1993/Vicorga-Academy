@@ -1,4 +1,14 @@
 /* Pénsum desplegable de Belleza */
+.institutional-support { padding:56px 0; background:#191611; border-block:1px solid #463724; text-align:center; }
+.institutional-support-kicker { margin:0 0 12px; color:#e4bd83; font-size:14px; letter-spacing:.12em; }
+.institutional-support h2 { margin:0 0 32px; color:#fff6e8; font-family:var(--font-heading); font-size:clamp(28px,3vw,38px); font-weight:400; }
+.institutional-support-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; max-width:980px; margin:auto; }
+.institutional-support-grid article { min-width:0; }
+.institutional-logo { display:flex; align-items:center; justify-content:center; height:138px; padding:24px; background:#fff; border-radius:10px; }
+.institutional-logo img { display:block; max-width:100%; max-height:90px; width:auto; height:auto; object-fit:contain; }
+.institutional-support-grid p { margin:18px auto 0; max-width:290px; color:#d9d0c4; font-size:14px; line-height:1.6; }
+.institutional-support-grid strong { color:#fff6e8; display:block; font-weight:600; }
+@media(max-width:650px) { .institutional-support { padding:40px 0; } .institutional-support-grid { grid-template-columns:1fr; gap:28px; max-width:340px; } .institutional-logo { height:120px; } }
 .career-footer { padding:56px 0 24px; background:#111; border-top:1px solid #3c3023; }
 .career-footer-top { display:flex; align-items:center; justify-content:space-between; gap:40px; padding-bottom:32px; }
 .career-footer-brand .logo-img { height:58px; }

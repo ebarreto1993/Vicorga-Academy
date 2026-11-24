@@ -201,7 +201,7 @@ const carreras = {
             {
                 "numero": "2",
                 "nombre": "Cortes tradicionales",
-                "imagen": "assets/images/modulos_barberia/m2.jpg",
+                "imagen": "assets/images/modulos_barberia/m2.jpeg",
                 "temas": [
                     "Anatomía del cráneo y zonas de trabajo",
                     "Seccionamientos y particiones básicas (clase práctica)",
@@ -218,7 +218,7 @@ const carreras = {
             {
                 "numero": "3",
                 "nombre": "Tijeras y estructuras",
-                "imagen": "assets/images/modulos_barberia/m3.jpg",
+                "imagen": "assets/images/modulos_barberia/m3.jpeg",
                 "temas": [
                     "Particiones, subsecciones y distribuciones",
                     "Proyección, elevaciones y ángulos de 0°, 45°, 90° y 180°",
@@ -232,7 +232,7 @@ const carreras = {
             {
                 "numero": "4",
                 "nombre": "Sombreados y desvanecidos",
-                "imagen": "assets/images/modulos_barberia/m4.jpg",
+                "imagen": "assets/images/modulos_barberia/m4.jpeg",
                 "temas": [
                     "Técnicas de difuminado y lectura de líneas",
                     "Control de la palanca, alzas intermedias y herramientas de detalle",
@@ -246,7 +246,7 @@ const carreras = {
             {
                 "numero": "5",
                 "nombre": "Sombreados avanzados",
-                "imagen": "assets/images/modulos_barberia/m5.jpg",
+                "imagen": "assets/images/modulos_barberia/m5.jpeg",
                 "temas": [
                     "Taper fade: medio, alto y bajo",
                     "Sombreado en V",
@@ -260,7 +260,7 @@ const carreras = {
             {
                 "numero": "6",
                 "nombre": "Tricología y tratamientos",
-                "imagen": "assets/images/modulos_barberia/m6.jpg",
+                "imagen": "assets/images/modulos_barberia/m6.jpeg",
                 "temas": [
                     "Tricología y aplicación en barbería",
                     "Tipos de cabello",
@@ -286,7 +286,7 @@ const carreras = {
             {
                 "numero": "8",
                 "nombre": "Visagismo, peinados y asesoría de imagen",
-                "imagen": "assets/images/modulos_barberia/m8.jpg",
+                "imagen": "assets/images/modulos_barberia/m8.jpeg",
                 "temas": [
                     "Visagismo avanzado",
                     "Tipos de rostro, cráneo y perfil",
@@ -301,7 +301,7 @@ const carreras = {
             {
                 "numero": "9",
                 "nombre": "Permacología y transformaciones",
-                "imagen": "assets/images/modulos_barberia/m9.jpg",
+                "imagen": "assets/images/modulos_barberia/m9.mp4",
                 "temas": [
                     "Texturizado con tijeras y técnica de corte",
                     "Peinados y definición de cabello ondulado y rizado",
@@ -315,7 +315,7 @@ const carreras = {
             {
                 "numero": "10",
                 "nombre": "Colorimetría",
-                "imagen": "assets/images/modulos_barberia/m10.jpg",
+                "imagen": "assets/images/modulos_barberia/m10.jpeg",
                 "temas": [
                     "Introducción a la colorimetría y teoría del color",
                     "Estrella cromática y leyes del color",
@@ -345,7 +345,7 @@ const carreras = {
             {
                 "numero": "12",
                 "nombre": "Prácticas profesionales y gestión de un barbero profesional",
-                "imagen": "assets/images/modulos_barberia/m12.jpg",
+                "imagen": "assets/images/modulos_barberia/m12.jpeg",
                 "temas": [
                     "Protocolo de servicios",
                     "Cálculo básico de precios",
