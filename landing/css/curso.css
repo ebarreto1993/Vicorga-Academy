@@ -1,6 +1,6 @@
 /* Pénsum desplegable de Belleza */
 .institutional-support { padding:56px 0; background:#191611; border-block:1px solid #463724; text-align:center; }
-.institutional-support-kicker { margin:0 0 12px; color:#e4bd83; font-size:14px; letter-spacing:.12em; }
+.institutional-support-kicker { margin:0 0 12px; color:#e4bd83; font-size:14px; letter-spacing:.03em; }
 .institutional-support h2 { margin:0 0 32px; color:#fff6e8; font-family:var(--font-heading); font-size:clamp(28px,3vw,38px); font-weight:400; }
 .institutional-support-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; max-width:980px; margin:auto; }
 .institutional-support-grid article { min-width:0; }
