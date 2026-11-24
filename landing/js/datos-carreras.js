@@ -374,7 +374,7 @@ const carreras = {
             {
                 "numero": "1",
                 "nombre": "VIP Russian – Manicure in Fire",
-                "imagen": "assets/images/modulos_uñas/m1.jpg",
+                "imagen": "assets/images/modulos_uñas/m1.jpeg",
                 "temas": [
                     "Manicura combinada",
                     "Uso de drill y sus fresas",
@@ -387,7 +387,7 @@ const carreras = {
             {
                 "numero": "2",
                 "nombre": "Pedicura",
-                "imagen": "assets/images/modulos_uñas/m2.jpg",
+                "imagen": "assets/images/modulos_uñas/m2.jpeg",
                 "temas": [
                     "Limpieza correcta",
                     "Manejo de fresas y productos",
@@ -410,7 +410,7 @@ const carreras = {
             {
                 "numero": "4",
                 "nombre": "Soft Gel Beginner",
-                "imagen": "assets/images/modulos_uñas/m4.jpg",
+                "imagen": "assets/images/modulos_uñas/m4.jpeg",
                 "temas": [
                     "Teoría de tips",
                     "Colocación adecuada del tip soft",
@@ -420,7 +420,7 @@ const carreras = {
             {
                 "numero": "5",
                 "nombre": "Builder Gel – Gel de construcción",
-                "imagen": "assets/images/modulos_uñas/m5.jpg",
+                "imagen": "assets/images/modulos_uñas/m5.jpeg",
                 "temas": [
                     "Teoría del gel de construcción",
                     "Manejo del producto",
@@ -431,7 +431,7 @@ const carreras = {
             {
                 "numero": "6",
                 "nombre": "Marketing de redes",
-                "imagen": "assets/images/modulos_uñas/m6.jpg",
+                "imagen": "assets/images/modulos_uñas/m6.jpeg",
                 "temas": [
                     "Creación de logo",
                     "Creación de tu página de Instagram",
@@ -441,7 +441,7 @@ const carreras = {
             {
                 "numero": "7",
                 "nombre": "Polygel Hyper Natural",
-                "imagen": "assets/images/modulos_uñas/m7.jpg",
+                "imagen": "assets/images/modulos_uñas/m7.jpeg",
                 "temas": [
                     "Teoría de polygel",
                     "Manejo del producto",
@@ -453,7 +453,7 @@ const carreras = {
             {
                 "numero": "8",
                 "nombre": "Sistema Dual – Técnicas en tendencia",
-                "imagen": "assets/images/modulos_uñas/m8.jpg",
+                "imagen": "assets/images/modulos_uñas/m8.jpeg",
                 "temas": [
                     "Teoría de cápsulas",
                     "Manejo del producto",
@@ -475,7 +475,7 @@ const carreras = {
             {
                 "numero": "10",
                 "nombre": "Acrílico Hyper Realista",
-                "imagen": "assets/images/modulos_uñas/m10.jpg",
+                "imagen": "assets/images/modulos_uñas/m10.jpeg",
                 "temas": [
                     "Teoría y manejo del producto",
                     "Full cover",
@@ -498,7 +498,7 @@ const carreras = {
             {
                 "numero": "12",
                 "nombre": "Expert Nails",
-                "imagen": "assets/images/modulos_uñas/m12.jpg",
+                "imagen": "assets/images/modulos_uñas/m12.jpeg",
                 "temas": [
                     "Estructuras de fantasía",
                     "Decoloración en alto relieve",
