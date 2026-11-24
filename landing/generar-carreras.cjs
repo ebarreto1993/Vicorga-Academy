@@ -10,6 +10,8 @@ for (const [key, carrera] of Object.entries(carreras)) {
     const description = escape(carrera.descripcion);
     let html = template.replace('<html lang="es">', `<html lang="es" data-carrera="${key}">`);
     html = html.replace(/<title>[^<]*<\/title>/, `<title>${title}</title>`);
+    const url = `https://vicorga-academy.vercel.app/carrera-${key}.html`;
+    html = html.replace('</head>', `    <meta property="og:url" content="${url}">\n    <link rel="canonical" href="${url}">\n</head>`);
     for (const name of ['description', 'og:description', 'twitter:description']) {
         const attribute = name.startsWith('og:') ? 'property' : 'name';
         html = html.replace(new RegExp(`<meta ${attribute}="${name}" content="[^"]*">`), `<meta ${attribute}="${name}" content="${description}">`);
