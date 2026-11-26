@@ -592,13 +592,13 @@ header {
 /* ================= HERO GRID (2 COLUMNAS) ================= */
 .hero-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 60px;
     align-items: flex-start;
 }
 
 .hero-text {
-    /* El contenido del hero ya está estilizado */
+    overflow-wrap: anywhere;
 }
 
 .hero-form {
@@ -626,6 +626,8 @@ header {
 
 .inscripcion-form-hero input,
 .inscripcion-form-hero select {
+    width: 100%;
+    min-width: 0;
     padding: 12px 14px;
     border: 1px solid rgba(198, 156, 109, 0.3);
     border-radius: 8px;
@@ -657,12 +659,29 @@ header {
 
 @media (max-width: 992px) {
     .hero-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         gap: 40px;
     }
-    
+
     .hero-form {
         max-width: 400px;
+        padding: clamp(20px, 8vw, 40px);
+    }
+
+    .inscripcion-form-hero input,
+    .inscripcion-form-hero select {
+        font-size: 16px;
+    }
+
+    .inscripcion-form-hero select {
+        appearance: none;
+        padding-right: 36px;
+        text-overflow: ellipsis;
+        background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
+                          linear-gradient(135deg, currentColor 50%, transparent 50%);
+        background-position: right 20px center, right 15px center;
+        background-size: 5px 5px;
+        background-repeat: no-repeat;
     }
 }
 
