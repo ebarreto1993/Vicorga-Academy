@@ -176,6 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const nombre = document.getElementById('nombre-hero').value.trim();
             const apellido = document.getElementById('apellido-hero').value.trim();
             const direccion = document.getElementById('direccion-hero').value.trim();
+            const horario = document.getElementById('horario-hero').value;
             const carrera = document.getElementById('carrera-hero').value;
             
             if (!nombre || !apellido) {
@@ -193,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-const mensaje = encodeURIComponent(`Hola, me interesa inscribirme:\n\nNombre: ${nombre} ${apellido}\nDirección: ${direccion}\nCarrera: ${carrera}\nDeseo consultar las próximas fechas de inscripción y los horarios disponibles.`);
+            const mensaje = encodeURIComponent(`Hola, me interesa inscribirme:\n\nNombre: ${nombre} ${apellido}\nDirección: ${direccion}\nHorario de preferencia: ${horario}\nCarrera: ${carrera}\nDeseo consultar las próximas fechas de inscripción y los horarios disponibles.`);
             
             window.open(`https://wa.me/593989330599?text=${mensaje}`, '_blank', 'noopener');
         });
