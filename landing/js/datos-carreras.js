@@ -373,7 +373,7 @@ const carreras = {
         "modulos": [
             {
                 "numero": "1",
-                "nombre": "VIP Russian – Manicure in Fire",
+                "nombre": "VIP Russian – Manicure on Fire",
                 "imagen": "assets/images/modulos_uñas/m1.jpeg",
                 "temas": [
                     "Manicura combinada",
